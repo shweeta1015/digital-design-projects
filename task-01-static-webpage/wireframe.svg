@@ -1,0 +1,477 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2550" width="100%" height="100%" style="background-color: #0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <!-- Patterns -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.75"/>
+    </pattern>
+    <filter id="shadow" x="-5%" y="-2%" width="110%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="1600" height="2550" fill="#0f172a"/>
+  <rect width="1600" height="2550" fill="url(#grid)"/>
+
+  <!-- Title & Metadata Header -->
+  <g transform="translate(60, 40)">
+    <rect width="1480" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="30" y="42" fill="#f8fafc" font-size="24" font-weight="700" letter-spacing="0.5">YUVA INTERN — WEEK 1 DESIGN SPECIFICATION &amp; WIREFRAME</text>
+    <text x="30" y="70" fill="#94a3b8" font-size="14">PROJECT: ApexHub — Sustainable Tech &amp; Innovation Co-Working Space | VIEWPORTS: Desktop (1000px) &amp; Mobile (380px)</text>
+    <rect x="1280" y="25" width="170" height="40" rx="20" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+    <text x="1365" y="50" fill="#60a5fa" font-size="13" font-weight="600" text-anchor="middle">LOW-FIDELITY MOCKUP</text>
+  </g>
+
+  <!-- ==================== DESKTOP WIREFRAME (LEFT) ==================== -->
+  <g id="desktop-wireframe" transform="translate(60, 160)">
+    <!-- Artboard Title -->
+    <text x="0" y="-12" fill="#38bdf8" font-size="16" font-weight="700">DESKTOP LAYOUT (1024px+ Breakpoint)</text>
+    <text x="340" y="-12" fill="#64748b" font-size="13">Standard 12-Column Responsive Flow • Semantic Nav • CSS Grid &amp; Flexbox</text>
+
+    <!-- Artboard Frame -->
+    <rect width="1020" height="2320" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+
+    <!-- 1. Header & Navigation -->
+    <g transform="translate(0, 0)">
+      <rect width="1020" height="70" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" rx="10 10 0 0"/>
+      <!-- Logo -->
+      <rect x="40" y="18" width="34" height="34" rx="8" fill="#2563eb"/>
+      <text x="85" y="41" fill="#0f172a" font-size="18" font-weight="800">Apex<tspan fill="#2563eb">Hub</tspan></text>
+      <!-- Nav items -->
+      <text x="380" y="41" fill="#475569" font-size="14" font-weight="500">Overview</text>
+      <text x="470" y="41" fill="#475569" font-size="14" font-weight="500">Spaces</text>
+      <text x="550" y="41" fill="#475569" font-size="14" font-weight="500">Amenities</text>
+      <text x="650" y="41" fill="#475569" font-size="14" font-weight="500">Memberships</text>
+      <text x="770" y="41" fill="#475569" font-size="14" font-weight="500">Stories</text>
+      <!-- CTA Button -->
+      <rect x="860" y="16" width="120" height="38" rx="6" fill="#2563eb"/>
+      <text x="920" y="40" fill="#ffffff" font-size="13" font-weight="600" text-anchor="middle">Book a Tour</text>
+    </g>
+
+    <!-- 2. Hero Section -->
+    <g transform="translate(0, 70)">
+      <rect width="1020" height="420" fill="#f1f5f9"/>
+      <!-- Content column (left) -->
+      <rect x="50" y="45" width="220" height="26" rx="13" fill="#e2e8f0"/>
+      <text x="65" y="62" fill="#2563eb" font-size="11" font-weight="700">🌱 100% SOLAR-POWERED SPACES</text>
+
+      <rect x="50" y="85" width="460" height="75" rx="4" fill="#cbd5e1"/>
+      <text x="65" y="122" fill="#1e293b" font-size="20" font-weight="700">[H1: The Future-Ready Workspace</text>
+      <text x="65" y="146" fill="#1e293b" font-size="20" font-weight="700">for Modern Tech Innovators]</text>
+
+      <rect x="50" y="175" width="450" height="40" rx="4" fill="#e2e8f0"/>
+      <text x="60" y="200" fill="#64748b" font-size="13">[Subhead: High-performance collaborative hubs, private studios &amp; labs]</text>
+
+      <!-- Hero CTAs -->
+      <rect x="50" y="235" width="150" height="46" rx="6" fill="#2563eb"/>
+      <text x="125" y="263" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">Explore Spaces</text>
+
+      <rect x="215" y="235" width="150" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+      <text x="290" y="263" fill="#334155" font-size="14" font-weight="600" text-anchor="middle">Virtual Tour 360°</text>
+
+      <!-- Stats Bar in Hero -->
+      <g transform="translate(50, 315)">
+        <rect width="450" height="65" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+        <text x="35" y="32" fill="#0f172a" font-size="18" font-weight="800">18+</text>
+        <text x="35" y="48" fill="#64748b" font-size="11">Global Hubs</text>
+        <line x1="140" y1="15" x2="140" y2="50" stroke="#e2e8f0"/>
+        <text x="175" y="32" fill="#0f172a" font-size="18" font-weight="800">5,400+</text>
+        <text x="175" y="48" fill="#64748b" font-size="11">Tech Members</text>
+        <line x1="290" y1="15" x2="290" y2="50" stroke="#e2e8f0"/>
+        <text x="330" y="32" fill="#0f172a" font-size="18" font-weight="800">99.9%</text>
+        <text x="330" y="48" fill="#64748b" font-size="11">Fiber Uptime</text>
+      </g>
+
+      <!-- Hero Image / Visual Frame (Right) -->
+      <rect x="540" y="45" width="430" height="330" rx="12" fill="#e2e8f0" stroke="#94a3b8" stroke-dasharray="6 4"/>
+      <line x1="540" y1="45" x2="970" y2="375" stroke="#cbd5e1" stroke-width="2"/>
+      <line x1="970" y1="45" x2="540" y2="375" stroke="#cbd5e1" stroke-width="2"/>
+      <rect x="660" y="180" width="190" height="40" rx="6" fill="#ffffff" stroke="#94a3b8"/>
+      <text x="755" y="205" fill="#475569" font-size="13" font-weight="600" text-anchor="middle">[Hero Workspace Image]</text>
+    </g>
+
+    <!-- 3. Key Amenities / Features Grid -->
+    <g transform="translate(0, 490)">
+      <rect width="1020" height="400" fill="#ffffff"/>
+      <text x="510" y="45" fill="#0f172a" font-size="22" font-weight="700" text-anchor="middle">Tailored Infrastructure for High-Growth Teams</text>
+      <text x="510" y="70" fill="#64748b" font-size="13" text-anchor="middle">Engineered for focus, wellness, and seamless hybrid collaboration</text>
+
+      <!-- 6 Cards Grid (3 columns x 2 rows) -->
+      <g transform="translate(50, 95)">
+        <rect width="280" height="125" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="36" height="36" rx="6" fill="#dbeafe"/>
+        <text x="20" y="75" fill="#1e293b" font-size="15" font-weight="600">Gigabit Fiber &amp; AI Pods</text>
+        <text x="20" y="98" fill="#64748b" font-size="12">Redundant multi-ISP connectivity &amp; GPU clusters.</text>
+      </g>
+      <g transform="translate(370, 95)">
+        <rect width="280" height="125" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="36" height="36" rx="6" fill="#dbeafe"/>
+        <text x="20" y="75" fill="#1e293b" font-size="15" font-weight="600">Hardware &amp; IoT Lab</text>
+        <text x="20" y="98" fill="#64748b" font-size="12">3D printers, oscilloscopes &amp; prototyping benches.</text>
+      </g>
+      <g transform="translate(690, 95)">
+        <rect width="280" height="125" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="36" height="36" rx="6" fill="#dbeafe"/>
+        <text x="20" y="75" fill="#1e293b" font-size="15" font-weight="600">Acoustic Focus Booths</text>
+        <text x="20" y="98" fill="#64748b" font-size="12">Soundproof spaces for podcasting &amp; client calls.</text>
+      </g>
+      <g transform="translate(50, 240)">
+        <rect width="280" height="125" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="36" height="36" rx="6" fill="#dbeafe"/>
+        <text x="20" y="75" fill="#1e293b" font-size="15" font-weight="600">24/7 Biometric Access</text>
+        <text x="20" y="98" fill="#64748b" font-size="12">Encrypted mobile pass with round-the-clock security.</text>
+      </g>
+      <g transform="translate(370, 240)">
+        <rect width="280" height="125" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="36" height="36" rx="6" fill="#dbeafe"/>
+        <text x="20" y="75" fill="#1e293b" font-size="15" font-weight="600">Artisan Cafe &amp; Brew Bar</text>
+        <text x="20" y="98" fill="#64748b" font-size="12">Organic fair-trade barista coffee &amp; healthy snacks.</text>
+      </g>
+      <g transform="translate(690, 240)">
+        <rect width="280" height="125" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="36" height="36" rx="6" fill="#dbeafe"/>
+        <text x="20" y="75" fill="#1e293b" font-size="15" font-weight="600">Wellness &amp; Zen Lounge</text>
+        <text x="20" y="98" fill="#64748b" font-size="12">Meditation pods, ergonomic chairs &amp; standing desks.</text>
+      </g>
+    </g>
+
+    <!-- 4. Featured Workspaces Showcase -->
+    <g transform="translate(0, 890)">
+      <rect width="1020" height="460" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="50" y="45" fill="#0f172a" font-size="22" font-weight="700">Explore Flexible Workspaces</text>
+      <text x="50" y="70" fill="#64748b" font-size="13">Select the ideal environment for your solo focus or expanding company</text>
+
+      <!-- 3 Showcase Cards -->
+      <g transform="translate(50, 95)">
+        <rect width="285" height="325" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+        <rect width="285" height="150" rx="10 10 0 0" fill="#e2e8f0"/>
+        <line x1="0" y1="0" x2="285" y2="150" stroke="#cbd5e1"/>
+        <line x1="285" y1="0" x2="0" y2="150" stroke="#cbd5e1"/>
+        <rect x="15" y="165" width="75" height="20" rx="10" fill="#e0f2fe"/>
+        <text x="52" y="179" fill="#0369a1" font-size="10" font-weight="700" text-anchor="middle">FLEX DESK</text>
+        <text x="15" y="210" fill="#0f172a" font-size="17" font-weight="700">Open Hot Desk</text>
+        <text x="15" y="235" fill="#64748b" font-size="12">Full access to dynamic lounges &amp; quiet focus benches.</text>
+        <line x1="15" y1="260" x2="270" y2="260" stroke="#f1f5f9"/>
+        <text x="15" y="285" fill="#0f172a" font-size="14" font-weight="700">From $180<tspan font-size="11" font-weight="400" fill="#64748b">/month</tspan></text>
+        <rect x="180" y="268" width="90" height="32" rx="6" fill="#2563eb"/>
+        <text x="225" y="289" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">View Details</text>
+      </g>
+      <g transform="translate(367, 95)">
+        <rect width="285" height="325" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+        <rect width="285" height="150" rx="8 8 0 0" fill="#e2e8f0"/>
+        <line x1="0" y1="0" x2="285" y2="150" stroke="#cbd5e1"/>
+        <line x1="285" y1="0" x2="0" y2="150" stroke="#cbd5e1"/>
+        <rect x="15" y="165" width="95" height="20" rx="10" fill="#dbeafe"/>
+        <text x="62" y="179" fill="#1d4ed8" font-size="10" font-weight="700" text-anchor="middle">MOST POPULAR</text>
+        <text x="15" y="210" fill="#0f172a" font-size="17" font-weight="700">Dedicated Desk</text>
+        <text x="15" y="235" fill="#64748b" font-size="12">Reserved dual-monitor desk with secure lockable filing.</text>
+        <line x1="15" y1="260" x2="270" y2="260" stroke="#f1f5f9"/>
+        <text x="15" y="285" fill="#0f172a" font-size="14" font-weight="700">From $350<tspan font-size="11" font-weight="400" fill="#64748b">/month</tspan></text>
+        <rect x="180" y="268" width="90" height="32" rx="6" fill="#2563eb"/>
+        <text x="225" y="289" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">View Details</text>
+      </g>
+      <g transform="translate(685, 95)">
+        <rect width="285" height="325" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+        <rect width="285" height="150" rx="10 10 0 0" fill="#e2e8f0"/>
+        <line x1="0" y1="0" x2="285" y2="150" stroke="#cbd5e1"/>
+        <line x1="285" y1="0" x2="0" y2="150" stroke="#cbd5e1"/>
+        <rect x="15" y="165" width="90" height="20" rx="10" fill="#fef3c7"/>
+        <text x="60" y="179" fill="#b45309" font-size="10" font-weight="700" text-anchor="middle">PRIVATE TEAM</text>
+        <text x="15" y="210" fill="#0f172a" font-size="17" font-weight="700">Executive Studio</text>
+        <text x="15" y="235" fill="#64748b" font-size="12">Fully customizable acoustic room for teams of 5 to 40.</text>
+        <line x1="15" y1="260" x2="270" y2="260" stroke="#f1f5f9"/>
+        <text x="15" y="285" fill="#0f172a" font-size="14" font-weight="700">From $890<tspan font-size="11" font-weight="400" fill="#64748b">/month</tspan></text>
+        <rect x="180" y="268" width="90" height="32" rx="6" fill="#2563eb"/>
+        <text x="225" y="289" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">View Details</text>
+      </g>
+    </g>
+
+    <!-- 5. Pricing Comparison Table / Cards -->
+    <g transform="translate(0, 1350)">
+      <rect width="1020" height="360" fill="#ffffff"/>
+      <text x="510" y="45" fill="#0f172a" font-size="22" font-weight="700" text-anchor="middle">Transparent Membership Tiers</text>
+      <text x="510" y="70" fill="#64748b" font-size="13" text-anchor="middle">No hidden maintenance fees. Cancel or upgrade anytime with 30-day notice.</text>
+
+      <!-- 3 Tier Cards -->
+      <g transform="translate(60, 95)">
+        <rect width="270" height="235" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="35" fill="#0f172a" font-size="16" font-weight="700">Day Explorer</text>
+        <text x="20" y="70" fill="#2563eb" font-size="28" font-weight="800">$25<tspan font-size="12" fill="#64748b"> /day</tspan></text>
+        <text x="20" y="105" fill="#475569" font-size="12">✓ High-speed Wi-Fi 6</text>
+        <text x="20" y="130" fill="#475569" font-size="12">✓ Cafe &amp; open lounge</text>
+        <text x="20" y="155" fill="#475569" font-size="12">✓ Phone booth credits</text>
+        <rect x="20" y="180" width="230" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="135" y="204" fill="#334155" font-size="13" font-weight="600" text-anchor="middle">Get Day Pass</text>
+      </g>
+      <g transform="translate(375, 95)">
+        <rect width="270" height="235" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+        <text x="20" y="35" fill="#1d4ed8" font-size="16" font-weight="700">Pro Resident</text>
+        <text x="20" y="70" fill="#1d4ed8" font-size="28" font-weight="800">$350<tspan font-size="12" fill="#64748b"> /mo</tspan></text>
+        <text x="20" y="105" fill="#334155" font-size="12">✓ 24/7 All-hub access</text>
+        <text x="20" y="130" fill="#334155" font-size="12">✓ Dedicated ergonomic desk</text>
+        <text x="20" y="155" fill="#334155" font-size="12">✓ 15h Conference credits</text>
+        <rect x="20" y="180" width="230" height="38" rx="6" fill="#2563eb"/>
+        <text x="135" y="204" fill="#ffffff" font-size="13" font-weight="600" text-anchor="middle">Join as Resident</text>
+      </g>
+      <g transform="translate(690, 95)">
+        <rect width="270" height="235" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="20" y="35" fill="#0f172a" font-size="16" font-weight="700">Scale Enterprise</text>
+        <text x="20" y="70" fill="#2563eb" font-size="28" font-weight="800">$890+<tspan font-size="12" fill="#64748b"> /mo</tspan></text>
+        <text x="20" y="105" fill="#475569" font-size="12">✓ Private keycard suite</text>
+        <text x="20" y="130" fill="#475569" font-size="12">✓ Custom branding &amp; racks</text>
+        <text x="20" y="155" fill="#475569" font-size="12">✓ Unlimited guest passes</text>
+        <rect x="20" y="180" width="230" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="135" y="204" fill="#334155" font-size="13" font-weight="600" text-anchor="middle">Inquire for Teams</text>
+      </g>
+    </g>
+
+    <!-- 6. Testimonials & Social Proof -->
+    <g transform="translate(0, 1710)">
+      <rect width="1020" height="230" fill="#f8fafc"/>
+      <text x="510" y="40" fill="#0f172a" font-size="20" font-weight="700" text-anchor="middle">Trusted by Leading Founders &amp; Builders</text>
+
+      <g transform="translate(50, 65)">
+        <rect width="285" height="135" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+        <text x="20" y="35" fill="#f59e0b" font-size="14">★★★★★</text>
+        <text x="20" y="65" fill="#334155" font-size="12">"The gigabit fiber and hardware maker space saved us 4 months in our prototype cycle."</text>
+        <circle cx="35" cy="105" r="14" fill="#cbd5e1"/>
+        <text x="60" y="104" fill="#0f172a" font-size="12" font-weight="700">Sarah Chen</text>
+        <text x="60" y="118" fill="#64748b" font-size="10">CTO, NeuralScale</text>
+      </g>
+      <g transform="translate(367, 65)">
+        <rect width="285" height="135" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+        <text x="20" y="35" fill="#f59e0b" font-size="14">★★★★★</text>
+        <text x="20" y="65" fill="#334155" font-size="12">"Vibrant community with real focus. The best co-working experience we have ever had."</text>
+        <circle cx="35" cy="105" r="14" fill="#cbd5e1"/>
+        <text x="60" y="104" fill="#0f172a" font-size="12" font-weight="700">Alex Morgan</text>
+        <text x="60" y="118" fill="#64748b" font-size="10">Founder, GreenFlow</text>
+      </g>
+      <g transform="translate(685, 65)">
+        <rect width="285" height="135" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+        <text x="20" y="35" fill="#f59e0b" font-size="14">★★★★★</text>
+        <text x="20" y="65" fill="#334155" font-size="12">"Flawless soundproof booths and friendly staff. Our remote team loves our sprint weeks here."</text>
+        <circle cx="35" cy="105" r="14" fill="#cbd5e1"/>
+        <text x="60" y="104" fill="#0f172a" font-size="12" font-weight="700">Elena Rostova</text>
+        <text x="60" y="118" fill="#64748b" font-size="10">Lead Designer, Studio Apex</text>
+      </g>
+    </g>
+
+    <!-- 7. Booking / CTA Form Section -->
+    <g transform="translate(0, 1940)">
+      <rect width="1020" height="230" fill="#0f172a"/>
+      <text x="60" y="50" fill="#ffffff" font-size="22" font-weight="700">Schedule Your Personalized Tour</text>
+      <text x="60" y="75" fill="#94a3b8" font-size="13">Experience the space first-hand with complimentary day-pass credits.</text>
+
+      <!-- Form Inputs -->
+      <g transform="translate(60, 100)">
+        <!-- Input 1: Name -->
+        <rect x="0" y="0" width="200" height="42" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="15" y="26" fill="#64748b" font-size="12">Full Name</text>
+
+        <!-- Input 2: Email -->
+        <rect x="220" y="0" width="220" height="42" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="235" y="26" fill="#64748b" font-size="12">Work Email Address</text>
+
+        <!-- Input 3: Hub Location -->
+        <rect x="460" y="0" width="180" height="42" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="475" y="26" fill="#64748b" font-size="12">Select Location ▾</text>
+
+        <!-- Submit Button -->
+        <rect x="660" y="0" width="180" height="42" rx="6" fill="#3b82f6"/>
+        <text x="750" y="26" fill="#ffffff" font-size="13" font-weight="600" text-anchor="middle">Book Tour Now</text>
+      </g>
+      <text x="60" y="180" fill="#64748b" font-size="11">🔒 No spam guarantee • Immediate confirmation • Free barista coffee included on visit</text>
+    </g>
+
+    <!-- 8. Footer -->
+    <g transform="translate(0, 2170)">
+      <rect width="1020" height="150" fill="#0b1120" rx="0 0 10 10"/>
+      <text x="60" y="45" fill="#f8fafc" font-size="18" font-weight="800">Apex<tspan fill="#3b82f6">Hub</tspan></text>
+      <text x="60" y="70" fill="#64748b" font-size="12">Empowering next-generation builders and creatives.</text>
+      <text x="60" y="110" fill="#475569" font-size="11">© 2026 ApexHub Technologies Inc. All rights reserved.</text>
+
+      <!-- Links columns -->
+      <g transform="translate(420, 30)">
+        <text x="0" y="15" fill="#cbd5e1" font-size="13" font-weight="600">Company</text>
+        <text x="0" y="38" fill="#64748b" font-size="11">About Us</text>
+        <text x="0" y="58" fill="#64748b" font-size="11">Careers</text>
+        <text x="0" y="78" fill="#64748b" font-size="11">Impact</text>
+      </g>
+      <g transform="translate(600, 30)">
+        <text x="0" y="15" fill="#cbd5e1" font-size="13" font-weight="600">Resources</text>
+        <text x="0" y="38" fill="#64748b" font-size="11">Community Portal</text>
+        <text x="0" y="58" fill="#64748b" font-size="11">Events Schedule</text>
+        <text x="0" y="78" fill="#64748b" font-size="11">Help Center</text>
+      </g>
+      <g transform="translate(780, 30)">
+        <text x="0" y="15" fill="#cbd5e1" font-size="13" font-weight="600">Legal &amp; Privacy</text>
+        <text x="0" y="38" fill="#64748b" font-size="11">Privacy Policy</text>
+        <text x="0" y="58" fill="#64748b" font-size="11">Terms of Service</text>
+        <text x="0" y="78" fill="#64748b" font-size="11">Cookie Preferences</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== MOBILE WIREFRAME (RIGHT) ==================== -->
+  <g id="mobile-wireframe" transform="translate(1140, 160)">
+    <!-- Artboard Title -->
+    <text x="0" y="-12" fill="#38bdf8" font-size="16" font-weight="700">MOBILE LAYOUT (375px–480px)</text>
+    <text x="230" y="-12" fill="#64748b" font-size="13">Stacked &amp; Touch-Optimized</text>
+
+    <!-- Artboard Frame (Simulating mobile device) -->
+    <rect width="380" height="2320" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+
+    <!-- Mobile Nav Bar -->
+    <g transform="translate(0, 0)">
+      <rect width="380" height="60" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" rx="16 16 0 0"/>
+      <rect x="20" y="16" width="28" height="28" rx="6" fill="#2563eb"/>
+      <text x="56" y="35" fill="#0f172a" font-size="16" font-weight="800">Apex<tspan fill="#2563eb">Hub</tspan></text>
+      <!-- Hamburger Icon -->
+      <rect x="330" y="20" width="24" height="3" rx="1.5" fill="#334155"/>
+      <rect x="330" y="28" width="24" height="3" rx="1.5" fill="#334155"/>
+      <rect x="330" y="36" width="24" height="3" rx="1.5" fill="#334155"/>
+    </g>
+
+    <!-- Mobile Hero -->
+    <g transform="translate(0, 60)">
+      <rect width="380" height="470" fill="#f1f5f9"/>
+      <rect x="20" y="20" width="160" height="22" rx="11" fill="#e2e8f0"/>
+      <text x="32" y="35" fill="#2563eb" font-size="10" font-weight="700">🌱 100% SOLAR POWERED</text>
+
+      <rect x="20" y="55" width="340" height="80" rx="4" fill="#cbd5e1"/>
+      <text x="30" y="92" fill="#1e293b" font-size="16" font-weight="700">[H1: Future-Ready Workspace</text>
+      <text x="30" y="115" fill="#1e293b" font-size="16" font-weight="700">for Modern Innovators]</text>
+
+      <rect x="20" y="145" width="340" height="42" rx="4" fill="#e2e8f0"/>
+      <text x="30" y="170" fill="#64748b" font-size="11">[Subhead: Collaborative hubs &amp; labs]</text>
+
+      <!-- Stacked CTAs -->
+      <rect x="20" y="200" width="340" height="42" rx="6" fill="#2563eb"/>
+      <text x="190" y="226" fill="#ffffff" font-size="13" font-weight="600" text-anchor="middle">Explore Spaces</text>
+
+      <rect x="20" y="250" width="340" height="42" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="190" y="276" fill="#334155" font-size="13" font-weight="600" text-anchor="middle">Virtual Tour 360°</text>
+
+      <!-- Mobile Image Placeholder -->
+      <rect x="20" y="305" width="340" height="150" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-dasharray="4 3"/>
+      <line x1="20" y1="305" x2="360" y2="455" stroke="#cbd5e1"/>
+      <line x1="360" y1="305" x2="20" y2="455" stroke="#cbd5e1"/>
+      <text x="190" y="385" fill="#64748b" font-size="12" text-anchor="middle">[Responsive Workspace Hero]</text>
+    </g>
+
+    <!-- Mobile Features (Stacked) -->
+    <g transform="translate(0, 530)">
+      <rect width="380" height="420" fill="#ffffff"/>
+      <text x="20" y="30" fill="#0f172a" font-size="16" font-weight="700">Tailored Infrastructure</text>
+      <text x="20" y="50" fill="#64748b" font-size="11">Everything your team needs to thrive</text>
+
+      <g transform="translate(20, 65)">
+        <rect width="340" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="15" y="15" width="35" height="35" rx="6" fill="#dbeafe"/>
+        <text x="65" y="33" fill="#1e293b" font-size="13" font-weight="700">Gigabit Fiber &amp; AI Pods</text>
+        <text x="65" y="50" fill="#64748b" font-size="10">Ultra-fast redundant ISP connectivity</text>
+      </g>
+      <g transform="translate(20, 140)">
+        <rect width="340" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="15" y="15" width="35" height="35" rx="6" fill="#dbeafe"/>
+        <text x="65" y="33" fill="#1e293b" font-size="13" font-weight="700">Hardware &amp; IoT Maker Lab</text>
+        <text x="65" y="50" fill="#64748b" font-size="10">Prototyping equipment &amp; 3D printers</text>
+      </g>
+      <g transform="translate(20, 215)">
+        <rect width="340" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="15" y="15" width="35" height="35" rx="6" fill="#dbeafe"/>
+        <text x="65" y="33" fill="#1e293b" font-size="13" font-weight="700">Acoustic Focus Booths</text>
+        <text x="65" y="50" fill="#64748b" font-size="10">Soundproof privacy for calls</text>
+      </g>
+      <g transform="translate(20, 290)">
+        <rect width="340" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="15" y="15" width="35" height="35" rx="6" fill="#dbeafe"/>
+        <text x="65" y="33" fill="#1e293b" font-size="13" font-weight="700">Wellness &amp; Zen Lounge</text>
+        <text x="65" y="50" fill="#64748b" font-size="10">Ergonomic seating &amp; wellness</text>
+      </g>
+    </g>
+
+    <!-- Mobile Featured Spaces (Stacked Cards) -->
+    <g transform="translate(0, 950)">
+      <rect width="380" height="430" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="20" y="30" fill="#0f172a" font-size="16" font-weight="700">Featured Workspaces</text>
+      <text x="20" y="50" fill="#64748b" font-size="11">Adaptive spaces for every stage</text>
+
+      <g transform="translate(20, 70)">
+        <rect width="340" height="330" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1.5"/>
+        <rect width="340" height="140" rx="6 6 0 0" fill="#e2e8f0"/>
+        <line x1="0" y1="0" x2="340" y2="140" stroke="#cbd5e1"/>
+        <line x1="340" y1="0" x2="0" y2="140" stroke="#cbd5e1"/>
+        <rect x="15" y="155" width="95" height="18" rx="9" fill="#dbeafe"/>
+        <text x="62" y="168" fill="#1d4ed8" font-size="9" font-weight="700" text-anchor="middle">MOST POPULAR</text>
+        <text x="15" y="195" fill="#0f172a" font-size="15" font-weight="700">Dedicated Desk</text>
+        <text x="15" y="218" fill="#64748b" font-size="11">Reserved dual-screen desk with secure storage.</text>
+        <text x="15" y="250" fill="#0f172a" font-size="15" font-weight="700">$350<tspan font-size="11" fill="#64748b"> /mo</tspan></text>
+        <rect x="15" y="270" width="310" height="38" rx="6" fill="#2563eb"/>
+        <text x="170" y="294" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Reserve Dedicated Desk</text>
+      </g>
+    </g>
+
+    <!-- Mobile Pricing Plans -->
+    <g transform="translate(0, 1380)">
+      <rect width="380" height="320" fill="#ffffff"/>
+      <text x="20" y="30" fill="#0f172a" font-size="16" font-weight="700">Flexible Memberships</text>
+      <text x="20" y="50" fill="#64748b" font-size="11">Cancel or scale with 30-day notice</text>
+
+      <g transform="translate(20, 70)">
+        <rect width="340" height="220" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+        <text x="20" y="32" fill="#1d4ed8" font-size="15" font-weight="700">Pro Resident</text>
+        <text x="20" y="65" fill="#1d4ed8" font-size="26" font-weight="800">$350<tspan font-size="12" fill="#64748b"> /mo</tspan></text>
+        <text x="20" y="95" fill="#334155" font-size="11">✓ 24/7 All-hub access</text>
+        <text x="20" y="120" fill="#334155" font-size="11">✓ Dedicated ergonomic setup</text>
+        <text x="20" y="145" fill="#334155" font-size="11">✓ 15h Conference room credits</text>
+        <rect x="20" y="165" width="300" height="38" rx="6" fill="#2563eb"/>
+        <text x="170" y="189" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Join as Resident</text>
+      </g>
+    </g>
+
+    <!-- Mobile Testimonial -->
+    <g transform="translate(0, 1700)">
+      <rect width="380" height="200" fill="#f8fafc"/>
+      <text x="20" y="30" fill="#0f172a" font-size="15" font-weight="700">Member Testimonial</text>
+      <g transform="translate(20, 50)">
+        <rect width="340" height="130" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+        <text x="15" y="30" fill="#f59e0b" font-size="12">★★★★★</text>
+        <text x="15" y="55" fill="#334155" font-size="11">"ApexHub provided our team with the perfect environment to scale from 2 to 14 engineers."</text>
+        <circle cx="30" cy="98" r="14" fill="#cbd5e1"/>
+        <text x="52" y="96" fill="#0f172a" font-size="11" font-weight="700">Sarah Chen</text>
+        <text x="52" y="110" fill="#64748b" font-size="9">CTO, NeuralScale</text>
+      </g>
+    </g>
+
+    <!-- Mobile Schedule Form -->
+    <g transform="translate(0, 1900)">
+      <rect width="380" height="270" fill="#0f172a"/>
+      <text x="20" y="35" fill="#ffffff" font-size="16" font-weight="700">Book Your Tour</text>
+      <text x="20" y="55" fill="#94a3b8" font-size="11">Includes free 1-day pass &amp; coffee</text>
+
+      <g transform="translate(20, 75)">
+        <rect x="0" y="0" width="340" height="38" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="12" y="24" fill="#64748b" font-size="11">Full Name</text>
+
+        <rect x="0" y="48" width="340" height="38" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="12" y="72" fill="#64748b" font-size="11">Work Email</text>
+
+        <rect x="0" y="96" width="340" height="38" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="12" y="120" fill="#64748b" font-size="11">Select Hub Location ▾</text>
+
+        <rect x="0" y="144" width="340" height="38" rx="6" fill="#3b82f6"/>
+        <text x="170" y="168" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Schedule Tour Now</text>
+      </g>
+    </g>
+
+    <!-- Mobile Footer -->
+    <g transform="translate(0, 2170)">
+      <rect width="380" height="150" fill="#0b1120" rx="0 0 16 16"/>
+      <text x="20" y="35" fill="#f8fafc" font-size="16" font-weight="800">Apex<tspan fill="#3b82f6">Hub</tspan></text>
+      <text x="20" y="58" fill="#64748b" font-size="11">Empowering builders &amp; innovators.</text>
+      <text x="20" y="85" fill="#cbd5e1" font-size="11">Quick Links: Spaces • Pricing • FAQ</text>
+      <text x="20" y="115" fill="#475569" font-size="10">© 2026 ApexHub Technologies Inc.</text>
+    </g>
+  </g>
+</svg>

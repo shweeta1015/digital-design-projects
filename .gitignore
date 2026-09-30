@@ -1,0 +1,24 @@
+# Dependencies & Environment
+.env
+.env.*
+*.env
+node_modules/
+__pycache__/
+*.py[cod]
+
+# Operating System & IDE Cache
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+
+# Sensitive Keys & Credentials
+*.pem
+*.key
+*.cert
+*.token
+*.log

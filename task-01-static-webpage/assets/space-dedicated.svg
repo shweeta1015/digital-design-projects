@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <rect width="400" height="240" fill="#f8fafc"/>
+  <rect x="0" y="0" width="400" height="7" fill="#2563eb"/>
+  <!-- Acoustic Felt Partition Behind Desk -->
+  <rect x="50" y="25" width="300" height="110" rx="8" fill="#e2e8f0" stroke="#cbd5e1"/>
+  <!-- Pinboard notes -->
+  <rect x="75" y="45" width="30" height="25" fill="#fef08a" transform="rotate(-3 90 57)"/>
+  <rect x="120" y="48" width="35" height="22" fill="#bfdbfe" transform="rotate(2 137 59)"/>
+  <rect x="290" y="45" width="40" height="30" fill="#fed7aa" transform="rotate(-4 310 60)"/>
+  <!-- Dual Monitor Arms and Screens -->
+  <!-- Left Screen -->
+  <rect x="100" y="60" width="90" height="55" rx="3" fill="#0f172a" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="104" y="64" width="82" height="47" fill="#1e293b"/>
+  <line x1="110" y1="74" x2="140" y2="74" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="110" y1="82" x2="165" y2="82" stroke="#10b981" stroke-width="2"/>
+  <line x1="110" y1="90" x2="150" y2="90" stroke="#f59e0b" stroke-width="2"/>
+  <!-- Right Screen -->
+  <rect x="200" y="60" width="90" height="55" rx="3" fill="#0f172a" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="204" y="64" width="82" height="47" fill="#1e293b"/>
+  <polyline points="212,98 230,86 245,92 265,75 280,80" fill="none" stroke="#60a5fa" stroke-width="2"/>
+  <!-- Heavy Dual Mount Stand -->
+  <rect x="190" y="115" width="10" height="20" fill="#475569"/>
+  <!-- Motorized Standing Desk Surface -->
+  <polygon points="40,135 360,135 380,165 20,165" fill="#1e293b"/>
+  <rect x="20" y="165" width="360" height="8" fill="#0f172a"/>
+  <!-- Height adjustment controller keypad -->
+  <rect x="330" y="167" width="22" height="5" rx="1" fill="#3b82f6"/>
+  <!-- Heavy duty metal legs -->
+  <rect x="50" y="173" width="14" height="67" fill="#334155"/>
+  <rect x="336" y="173" width="14" height="67" fill="#334155"/>
+  <rect x="40" y="235" width="34" height="5" rx="2" fill="#1e293b"/>
+  <rect x="326" y="235" width="34" height="5" rx="2" fill="#1e293b"/>
+  <!-- Keyboard & Ergonomic Mouse -->
+  <rect x="160" y="145" width="70" height="12" rx="2" fill="#475569"/>
+  <ellipse cx="250" cy="151" rx="6" ry="8" fill="#475569"/>
+  <!-- Lockable Under-Desk Pedestal Drawer -->
+  <rect x="270" y="180" width="55" height="55" rx="3" fill="#cbd5e1" stroke="#94a3b8"/>
+  <line x1="270" y1="198" x2="325" y2="198" stroke="#94a3b8"/>
+  <line x1="270" y1="216" x2="325" y2="216" stroke="#94a3b8"/>
+  <circle cx="297" cy="189" r="2" fill="#475569"/>
+  <circle cx="297" cy="207" r="2" fill="#475569"/>
+  <circle cx="297" cy="225" r="2" fill="#475569"/>
+</svg>

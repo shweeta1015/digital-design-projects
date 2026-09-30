@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="glass-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Architecture Room -->
+  <rect width="600" height="450" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Perspective Floor & Grid -->
+  <polygon points="0,450 600,450 510,250 90,250" fill="#172033" opacity="0.9"/>
+  <line x1="90" y1="250" x2="0" y2="450" stroke="#334155" stroke-width="1.5"/>
+  <line x1="200" y1="250" x2="150" y2="450" stroke="#334155" stroke-width="1"/>
+  <line x1="300" y1="250" x2="300" y2="450" stroke="#334155" stroke-width="1"/>
+  <line x1="400" y1="250" x2="450" y2="450" stroke="#334155" stroke-width="1"/>
+  <line x1="510" y1="250" x2="600" y2="450" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Back Wall Glass Windows / Skylight -->
+  <rect x="90" y="50" width="420" height="180" rx="8" fill="url(#glass-grad)" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="230" y1="50" x2="230" y2="230" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4"/>
+  <line x1="370" y1="50" x2="370" y2="230" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Sun & Skyline outside window -->
+  <circle cx="230" cy="90" r="28" fill="#fbbf24" opacity="0.3"/>
+  <rect x="130" y="140" width="30" height="90" fill="#0f172a" opacity="0.6"/>
+  <rect x="170" y="110" width="45" height="120" fill="#0f172a" opacity="0.7"/>
+  <rect x="270" y="130" width="40" height="100" fill="#0f172a" opacity="0.6"/>
+  <rect x="330" y="100" width="55" height="130" fill="#0f172a" opacity="0.7"/>
+  <rect x="420" y="125" width="45" height="105" fill="#0f172a" opacity="0.6"/>
+
+  <!-- Ceiling Pendant Lights -->
+  <line x1="180" y1="0" x2="180" y2="70" stroke="#64748b" stroke-width="1.5"/>
+  <polygon points="170,75 190,75 185,70 175,70" fill="#94a3b8"/>
+  <path d="M 160 130 L 200 130 L 185 75 L 175 75 Z" fill="#fef08a" opacity="0.15"/>
+
+  <line x1="420" y1="0" x2="420" y2="70" stroke="#64748b" stroke-width="1.5"/>
+  <polygon points="410,75 430,75 425,70 415,70" fill="#94a3b8"/>
+  <path d="M 400 130 L 440 130 L 425 75 L 415 75 Z" fill="#fef08a" opacity="0.15"/>
+
+  <!-- Modern Acoustic Wall & Green Planter Wall (Left) -->
+  <rect x="25" y="110" width="50" height="230" rx="6" fill="#1e293b" stroke="#334155"/>
+  <circle cx="50" cy="140" r="16" fill="#10b981" opacity="0.8"/>
+  <circle cx="50" cy="180" r="14" fill="#059669" opacity="0.8"/>
+  <circle cx="50" cy="220" r="18" fill="#10b981" opacity="0.8"/>
+  <circle cx="50" cy="265" r="15" fill="#047857" opacity="0.9"/>
+  <rect x="35" y="300" width="30" height="30" rx="3" fill="#334155"/>
+
+  <!-- Modern Curved Work Desk -->
+  <polygon points="120,290 480,290 520,340 80,340" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+  <!-- Front Edge of Desk -->
+  <polygon points="80,340 520,340 520,348 80,348" fill="#1e293b"/>
+  <!-- Desk Legs -->
+  <rect x="95" y="348" width="10" height="75" fill="#475569" rx="2"/>
+  <rect x="495" y="348" width="10" height="75" fill="#475569" rx="2"/>
+
+  <!-- Dual Ultrawide Displays on Desk -->
+  <!-- Left Display -->
+  <rect x="180" y="225" width="115" height="60" rx="4" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="185" y="230" width="105" height="50" fill="#0f172a"/>
+  <!-- Code on screen -->
+  <line x1="192" y1="240" x2="230" y2="240" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="192" y1="248" x2="255" y2="248" stroke="#10b981" stroke-width="2"/>
+  <line x1="192" y1="256" x2="245" y2="256" stroke="#fbbf24" stroke-width="2"/>
+  <line x1="192" y1="264" x2="220" y2="264" stroke="#f43f5e" stroke-width="2"/>
+  <!-- Display Stand -->
+  <rect x="232" y="285" width="12" height="15" fill="#64748b"/>
+  <rect x="220" y="299" width="36" height="4" rx="2" fill="#475569"/>
+
+  <!-- Right Display -->
+  <rect x="305" y="225" width="115" height="60" rx="4" fill="#10b981" stroke="#34d399" stroke-width="1.5"/>
+  <rect x="310" y="230" width="105" height="50" fill="#0f172a"/>
+  <!-- Analytics Chart on screen -->
+  <polyline points="318,270 335,260 355,264 375,245 395,248 405,238" fill="none" stroke="#34d399" stroke-width="2"/>
+  <!-- Display Stand -->
+  <rect x="357" y="285" width="12" height="15" fill="#64748b"/>
+  <rect x="345" y="299" width="36" height="4" rx="2" fill="#475569"/>
+
+  <!-- Sleek Keyboard & Mouse -->
+  <rect x="240" y="312" width="100" height="15" rx="3" fill="#1e293b" stroke="#475569"/>
+  <ellipse cx="365" cy="318" rx="8" ry="10" fill="#1e293b" stroke="#475569"/>
+
+  <!-- Ceramic Coffee Cup -->
+  <ellipse cx="140" cy="320" rx="8" ry="6" fill="#f8fafc"/>
+  <path d="M 132 320 Q 132 334 140 334 Q 148 334 148 320 Z" fill="#f8fafc"/>
+  <path d="M 148 322 Q 154 326 148 330" stroke="#f8fafc" stroke-width="1.5" fill="none"/>
+
+  <!-- High-Tech Ergonomic Mesh Office Chair -->
+  <ellipse cx="300" cy="350" rx="45" ry="16" fill="#2563eb" opacity="0.9"/>
+  <!-- Backrest -->
+  <path d="M 270 350 Q 260 270 300 270 Q 340 270 330 350 Z" fill="#1d4ed8" opacity="0.85" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="296" y="366" width="8" height="35" fill="#475569"/>
+  <!-- 5-Star Base & Wheels -->
+  <line x1="300" y1="400" x2="265" y2="420" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <line x1="300" y1="400" x2="335" y2="420" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <line x1="300" y1="400" x2="300" y2="425" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="265" cy="422" r="4" fill="#0f172a"/>
+  <circle cx="335" cy="422" r="4" fill="#0f172a"/>
+  <circle cx="300" cy="427" r="4" fill="#0f172a"/>
+
+  <!-- Floating Stats Card (Glassmorphic) -->
+  <g transform="translate(420, 40)">
+    <rect width="150" height="65" rx="10" fill="#1e293b" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="25" cy="32" r="12" fill="#10b981" fill-opacity="0.2"/>
+    <text x="25" y="37" font-size="14" fill="#10b981" text-anchor="middle">⚡</text>
+    <text x="45" y="28" fill="#f8fafc" font-size="12" font-weight="700">100% Green</text>
+    <text x="45" y="44" fill="#94a3b8" font-size="10">Solar &amp; Zero Waste</text>
+  </g>
+
+  <!-- Floating Network Pill -->
+  <g transform="translate(30, 40)">
+    <rect width="140" height="50" rx="8" fill="#1e293b" fill-opacity="0.85" stroke="#3b82f6" stroke-width="1"/>
+    <circle cx="22" cy="25" r="8" fill="#2563eb"/>
+    <text x="36" y="23" fill="#f8fafc" font-size="11" font-weight="700">10 Gbps ISP</text>
+    <text x="36" y="37" fill="#38bdf8" font-size="9">Fiber Redundancy</text>
+  </g>
+</svg>

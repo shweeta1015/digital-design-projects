@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <rect width="400" height="240" fill="#f1f5f9"/>
+  <!-- Wall art / accent color stripe -->
+  <rect x="0" y="0" width="400" height="7" fill="#0284c7"/>
+  <!-- Window / Sunlight Beam -->
+  <polygon points="40,20 180,20 220,160 0,160" fill="#e0f2fe" opacity="0.6"/>
+  <!-- Wall frame -->
+  <rect x="250" y="30" width="80" height="50" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="260" y="40" width="60" height="30" fill="#dbeafe"/>
+  <circle cx="280" cy="52" r="6" fill="#0284c7"/>
+  <!-- Long communal bench desk -->
+  <polygon points="20,140 380,140 400,180 0,180" fill="#334155"/>
+  <rect x="0" y="180" width="400" height="12" fill="#1e293b"/>
+  <rect x="40" y="192" width="8" height="48" fill="#475569"/>
+  <rect x="350" y="192" width="8" height="48" fill="#475569"/>
+  <!-- Modern Laptop on desk -->
+  <polygon points="120,130 180,130 190,160 110,160" fill="#94a3b8"/>
+  <polygon points="125,100 175,100 180,130 120,130" fill="#0f172a" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="130" y="105" width="40" height="20" fill="#38bdf8" opacity="0.8"/>
+  <!-- Notepad & pen -->
+  <rect x="220" y="145" width="30" height="25" rx="2" fill="#ffffff"/>
+  <line x1="260" y1="145" x2="275" y2="165" stroke="#f59e0b" stroke-width="2"/>
+  <!-- Coffee mug -->
+  <rect x="80" y="140" width="14" height="18" rx="2" fill="#f8fafc"/>
+  <ellipse cx="87" cy="140" rx="7" ry="2" fill="#e2e8f0"/>
+  <!-- Stool / Chair -->
+  <rect x="130" y="165" width="50" height="8" rx="4" fill="#0284c7"/>
+  <line x1="145" y1="173" x2="140" y2="235" stroke="#64748b" stroke-width="3"/>
+  <line x1="165" y1="173" x2="170" y2="235" stroke="#64748b" stroke-width="3"/>
+  <!-- Plant in pot -->
+  <rect x="315" y="130" width="22" height="25" rx="3" fill="#cbd5e1"/>
+  <path d="M 326 130 Q 310 110 326 95 Q 342 110 326 130 Z" fill="#10b981"/>
+  <path d="M 326 125 Q 345 110 340 100 Q 326 115 326 125 Z" fill="#059669"/>
+</svg>
