@@ -22,3 +22,8 @@ desktop.ini
 *.cert
 *.token
 *.log
+
+# Build & Compilation Helpers
+task-01-static-webpage/*.py
+task-01-static-webpage/report.html
+
