@@ -26,4 +26,5 @@ desktop.ini
 # Build & Compilation Helpers
 task-01-static-webpage/*.py
 task-01-static-webpage/report.html
+task-01-static-webpage/test_results_detailed.json
 

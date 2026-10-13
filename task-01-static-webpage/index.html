@@ -28,11 +28,12 @@
       </a>
 
       <!-- Pure CSS Accessible Mobile Menu Toggle -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
-      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-btn">
+        <span class="visually-hidden">Toggle navigation menu</span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
       </label>
 
       <!-- Main Navigation Menu -->
@@ -416,9 +417,10 @@
         <div class="testimonials-grid">
           
           <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">
-              ★★★★★
+            <div class="testimonial-rating" role="img" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
             </div>
+            <h3 class="testimonial-headline">Accelerated Prototyping by 4 Months</h3>
             <blockquote class="testimonial-quote">
               "The gigabit fiber line and hardware prototyping lab saved us 4 months in our smart grid sensor cycle. Having 3D printers and quiet focus booths 10 steps away from our desks is completely game changing."
             </blockquote>
@@ -432,9 +434,10 @@
           </article>
 
           <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">
-              ★★★★★
+            <div class="testimonial-rating" role="img" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
             </div>
+            <h3 class="testimonial-headline">100% Solar-Powered Proof of Impact</h3>
             <blockquote class="testimonial-quote">
               "The 100% solar power commitment wasn't just PR for us—our enterprise climate tech customers visited our ApexHub private studio and were blown away by the zero-carbon certifications and natural light."
             </blockquote>
@@ -448,9 +451,10 @@
           </article>
 
           <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">
-              ★★★★★
+            <div class="testimonial-rating" role="img" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
             </div>
+            <h3 class="testimonial-headline">Acoustic Clarity for User Research</h3>
             <blockquote class="testimonial-quote">
               "As a remote product design lead, having acoustic focus booths with proper studio acoustics for user interviews eliminated all background chaos. The coffee and community events are pure gold."
             </blockquote>
@@ -555,6 +559,7 @@
 
   <!-- SEMANTIC SITE FOOTER -->
   <footer class="site-footer">
+    <h2 class="visually-hidden">ApexHub Footer Directory and Information</h2>
     <div class="container footer-container">
       
       <!-- Brand & Mission Column -->
@@ -572,18 +577,18 @@
         <p class="footer-tagline">
           Empowering the next generation of engineers, creators, and climate-positive startups with world-class collaborative infrastructure.
         </p>
-        <div class="social-links" aria-label="Social Media Links">
-          <a href="#" class="social-link" aria-label="ApexHub on GitHub">
+        <div class="social-links" role="group" aria-label="ApexHub Social Profiles">
+          <a href="https://github.com/shweeta1015/digital-design-projects" class="social-link" aria-label="ApexHub on GitHub" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
           </a>
-          <a href="#" class="social-link" aria-label="ApexHub on Twitter / X">
+          <a href="https://twitter.com" class="social-link" aria-label="ApexHub on Twitter / X" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
             </svg>
           </a>
-          <a href="#" class="social-link" aria-label="ApexHub on LinkedIn">
+          <a href="https://linkedin.com" class="social-link" aria-label="ApexHub on LinkedIn" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
@@ -593,7 +598,7 @@
 
       <!-- Quick Nav Links -->
       <div class="footer-col">
-        <h4 class="footer-heading">Workspaces</h4>
+        <h3 class="footer-heading">Workspaces</h3>
         <ul class="footer-links">
           <li><a href="#spaces">Open Hot Desks</a></li>
           <li><a href="#spaces">Dedicated Suites</a></li>
@@ -605,7 +610,7 @@
 
       <!-- Resources Links -->
       <div class="footer-col">
-        <h4 class="footer-heading">Ecosystem</h4>
+        <h3 class="footer-heading">Ecosystem</h3>
         <ul class="footer-links">
           <li><a href="#amenities">Global Locations</a></li>
           <li><a href="#amenities">Fiber Specs &amp; SLAs</a></li>
@@ -617,10 +622,11 @@
 
       <!-- Newsletter Column -->
       <div class="footer-col footer-newsletter-col">
-        <h4 class="footer-heading">Stay Connected</h4>
+        <h3 class="footer-heading">Stay Connected</h3>
         <p class="newsletter-desc">Subscribe to our weekly dispatch featuring tech teardowns and founder events.</p>
         <form action="#top" method="get" class="newsletter-form">
-          <input type="email" placeholder="Your work email" class="newsletter-input" required aria-label="Email for newsletter subscription">
+          <label for="newsletter-email" class="visually-hidden">Work email address for newsletter subscription</label>
+          <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Your work email" class="newsletter-input" required autocomplete="email">
           <button type="submit" class="btn btn-primary btn-newsletter">Subscribe</button>
         </form>
         <p class="newsletter-note">Zero spam. Unsubscribe anytime.</p>
@@ -635,10 +641,10 @@
           &copy; 2026 ApexHub Technologies Inc. Built for YUVA Intern Week 1 Assignment.
         </p>
         <ul class="legal-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Cookie Preferences</a></li>
-          <li><a href="#">Security &amp; Compliance</a></li>
+          <li><a href="#overview">Privacy Policy</a></li>
+          <li><a href="#overview">Terms of Service</a></li>
+          <li><a href="#overview">Cookie Preferences</a></li>
+          <li><a href="#overview">Security &amp; Compliance</a></li>
         </ul>
       </div>
     </div>

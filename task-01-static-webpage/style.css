@@ -121,7 +121,8 @@ body {
   transition: top var(--transition-fast);
 }
 
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
   top: var(--space-4);
   outline: 3px solid var(--color-accent-sky);
 }
@@ -918,6 +919,14 @@ ul {
   font-size: 1.125rem;
   letter-spacing: 0.15em;
   margin-bottom: var(--space-4);
+}
+
+.testimonial-headline {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-dark-900);
+  margin-bottom: var(--space-3);
+  line-height: 1.4;
 }
 
 .testimonial-quote {
