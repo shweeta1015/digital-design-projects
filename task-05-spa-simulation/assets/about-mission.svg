@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" width="500" height="360" role="img" aria-label="DevSpace collaborative engineering and learning pathways illustration">
+  <defs>
+    <linearGradient id="abGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="abGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <filter id="abShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <circle cx="250" cy="180" r="150" fill="#f8fafc" stroke="#e2e8f0" stroke-dasharray="4 4" stroke-width="2" />
+  
+  <!-- Central Hub Node -->
+  <g transform="translate(190, 120)" filter="url(#abShadow)">
+    <rect width="120" height="120" rx="24" fill="url(#abGrad1)" />
+    <!-- Graduation Cap / Learning Icon -->
+    <path d="M60 40L25 58L60 76L95 58L60 40Z" fill="#ffffff" />
+    <path d="M38 65V85C38 95 60 102 60 102C60 102 82 95 82 85V65L60 76L38 65Z" fill="#ffffff" opacity="0.9" />
+    <path d="M88 64V88" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="88" cy="91" r="3" fill="#ffffff" />
+  </g>
+
+  <!-- Node 1: Code / Frontend (Top Left) -->
+  <g transform="translate(60, 50)" filter="url(#abShadow)">
+    <circle cx="45" cy="45" r="45" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <circle cx="45" cy="45" r="32" fill="#eff6ff" />
+    <path d="M36 38L29 45L36 52M54 38L61 45L54 52M48 35L42 55" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <line x1="140" y1="110" x2="190" y2="150" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3 3" />
+
+  <!-- Node 2: Database / Backend (Top Right) -->
+  <g transform="translate(350, 50)" filter="url(#abShadow)">
+    <circle cx="45" cy="45" r="45" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <circle cx="45" cy="45" r="32" fill="#f5f3ff" />
+    <ellipse cx="45" cy="36" rx="16" ry="6" fill="#7c3aed" opacity="0.8" />
+    <path d="M29 36V46C29 49.3 36.2 52 45 52C53.8 52 61 49.3 61 46V36" fill="none" stroke="#7c3aed" stroke-width="2" />
+    <path d="M29 46V56C29 59.3 36.2 62 45 62C53.8 62 61 59.3 61 56V46" fill="none" stroke="#7c3aed" stroke-width="2" />
+  </g>
+  <line x1="360" y1="110" x2="310" y2="150" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3 3" />
+
+  <!-- Node 3: Design / UI/UX (Bottom Right) -->
+  <g transform="translate(350, 220)" filter="url(#abShadow)">
+    <circle cx="45" cy="45" r="45" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <circle cx="45" cy="45" r="32" fill="#eef2ff" />
+    <rect x="33" y="33" width="24" height="24" rx="6" fill="url(#abGrad2)" />
+    <circle cx="40" cy="40" r="3" fill="#ffffff" />
+    <path d="M33 51L41 45L47 49L53 43L57 47" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+  <line x1="360" y1="240" x2="310" y2="210" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3 3" />
+
+  <!-- Node 4: Community / Mentorship (Bottom Left) -->
+  <g transform="translate(60, 220)" filter="url(#abShadow)">
+    <circle cx="45" cy="45" r="45" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <circle cx="45" cy="45" r="32" fill="#f0fdf4" />
+    <circle cx="40" cy="40" r="6" fill="#10b981" />
+    <path d="M30 55C30 49 35 48 40 48C45 48 50 49 50 55" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+    <circle cx="53" cy="38" r="4" fill="#059669" />
+    <path d="M48 52C48 48 51 47 55 47C59 47 62 48 62 52" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+  <line x1="140" y1="240" x2="190" y2="210" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3 3" />
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180" role="img" aria-label="Modern Frontend Architecture Thumbnail">
+  <defs>
+    <linearGradient id="feGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="#eff6ff" />
+  <rect x="20" y="20" width="280" height="140" rx="12" fill="url(#feGrad)" />
+  <!-- Browser window elements -->
+  <rect x="40" y="40" width="240" height="100" rx="8" fill="#ffffff" opacity="0.95" />
+  <circle cx="56" cy="52" r="4" fill="#ef4444" />
+  <circle cx="68" cy="52" r="4" fill="#f59e0b" />
+  <circle cx="80" cy="52" r="4" fill="#10b981" />
+  <line x1="40" y1="62" x2="280" y2="62" stroke="#e2e8f0" stroke-width="1.5" />
+  <!-- Code brackets -->
+  <path d="M120 85L105 100L120 115M200 85L215 100L200 115M170 78L150 122" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

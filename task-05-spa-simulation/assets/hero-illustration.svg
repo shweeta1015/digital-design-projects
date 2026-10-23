@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="540" height="380" role="img" aria-label="DevSpace interactive learning hub illustration">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" />
+      <stop offset="100%" stop-color="#f5f3ff" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background decorative circular aura -->
+  <circle cx="270" cy="190" r="170" fill="url(#bgGrad)" />
+  <circle cx="430" cy="90" r="50" fill="#ede9fe" opacity="0.6" />
+  <circle cx="90" cy="280" r="40" fill="#dbeafe" opacity="0.6" />
+
+  <!-- Main IDE / Dashboard Window -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="45" width="400" height="280" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Window Titlebar -->
+    <path d="M70 61C70 52.1634 77.1634 45 86 45H454C462.837 45 470 52.1634 470 61V85H70V61Z" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Window controls -->
+    <circle cx="95" cy="65" r="5" fill="#ef4444" />
+    <circle cx="112" cy="65" r="5" fill="#f59e0b" />
+    <circle cx="129" cy="65" r="5" fill="#10b981" />
+    <rect x="180" y="58" width="180" height="14" rx="4" fill="#e2e8f0" opacity="0.7" />
+  </g>
+
+  <!-- Left Sidebar inside window -->
+  <rect x="72" y="87" width="90" height="236" fill="#f8fafc" />
+  <rect x="85" y="105" width="64" height="10" rx="3" fill="#cbd5e1" />
+  <rect x="85" y="125" width="50" height="8" rx="3" fill="#e2e8f0" />
+  <rect x="85" y="142" width="58" height="8" rx="3" fill="#e2e8f0" />
+  <rect x="85" y="159" width="45" height="8" rx="3" fill="#e2e8f0" />
+  <rect x="85" y="185" width="64" height="10" rx="3" fill="#cbd5e1" />
+  <rect x="85" y="205" width="52" height="8" rx="3" fill="#e2e8f0" />
+
+  <!-- Code editor / content area -->
+  <g transform="translate(180, 105)">
+    <!-- Code lines -->
+    <text x="0" y="14" font-family="'Consolas', monospace" font-size="12" fill="#7c3aed" font-weight="bold">const <tspan fill="#2563eb">devSpace</tspan> = <tspan fill="#0f172a">{</tspan></text>
+    <text x="15" y="34" font-family="'Consolas', monospace" font-size="12" fill="#64748b">learners: <tspan fill="#059669">14200</tspan>,</text>
+    <text x="15" y="54" font-family="'Consolas', monospace" font-size="12" fill="#64748b">mode: <tspan fill="#d97706">'SinglePageApp'</tspan>,</text>
+    <text x="15" y="74" font-family="'Consolas', monospace" font-size="12" fill="#64748b">interactive: <tspan fill="#2563eb">true</tspan>,</text>
+    <text x="15" y="94" font-family="'Consolas', monospace" font-size="12" fill="#64748b">status: <tspan fill="#059669">'Active'</tspan></text>
+    <text x="0" y="114" font-family="'Consolas', monospace" font-size="12" fill="#0f172a">};</text>
+
+    <!-- Mini Analytics Bar inside Editor -->
+    <rect x="0" y="130" width="270" height="70" rx="8" fill="#f8fafc" stroke="#e2e8f0" />
+    <rect x="15" y="145" width="70" height="6" rx="3" fill="#94a3b8" />
+    <rect x="15" y="158" width="50" height="16" rx="4" fill="#2563eb" />
+    <rect x="95" y="145" width="70" height="6" rx="3" fill="#94a3b8" />
+    <rect x="95" y="158" width="60" height="16" rx="4" fill="#4f46e5" />
+    <rect x="175" y="145" width="70" height="6" rx="3" fill="#94a3b8" />
+    <rect x="175" y="158" width="40" height="16" rx="4" fill="#7c3aed" />
+  </g>
+
+  <!-- Floating Achievement Badge 1 (Top Right) -->
+  <g transform="translate(380, 25)" filter="url(#shadow)">
+    <rect width="130" height="50" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+    <circle cx="28" cy="25" r="14" fill="#dcfce7" />
+    <path d="M23 25L26 28L33 21" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="50" y="22" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">SPA Router</text>
+    <text x="50" y="37" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">0ms Reloads</text>
+  </g>
+
+  <!-- Floating Progress Card 2 (Bottom Left) -->
+  <g transform="translate(35, 260)" filter="url(#shadow)">
+    <rect width="140" height="60" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+    <circle cx="30" cy="30" r="16" fill="url(#primaryGrad)" />
+    <path d="M25 26L30 31L36 24" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="55" y="27" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Progress</text>
+    <text x="55" y="42" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#2563eb">94% Done</text>
+  </g>
+</svg>

@@ -31,6 +31,10 @@ task-2/*.py
 task-2/report.html
 task-03/*.py
 task-04-performance-accessibility/*.py
+task-05-spa-simulation/test_spa.py
+task-05-spa-simulation/build_*.py
+task-05-spa-simulation/create_*.py
+
 
 
 

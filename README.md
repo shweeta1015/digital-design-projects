@@ -73,13 +73,28 @@ digital-design-projects/
 │   ├── test_summary.json              # Playwright automated test metrics (0px overflow)
 │   └── README.md                      # Task 03 technical documentation
 │
-└── task-04-performance-accessibility/ # Week 4: Enhancing Web Page Performance & Accessibility
-    ├── index.html                     # Optimized semantic HTML5 webpage (ApexHub)
-    ├── style.css                      # Modular CSS3 stylesheet (1,159 lines, zero-overflow grid)
-    ├── report.md                      # Comprehensive 13-section technical report with Lighthouse audits
+├── task-04-performance-accessibility/ # Week 4: Enhancing Web Page Performance & Accessibility
+│   ├── index.html                     # Optimized semantic HTML5 webpage (ApexHub)
+│   ├── style.css                      # Modular CSS3 stylesheet (1,159 lines, zero-overflow grid)
+│   ├── report.md                      # Comprehensive 13-section technical report with Lighthouse audits
+│   ├── report.docx                    # Formatted Microsoft Word Technical Report
+│   ├── README.md                      # Technical documentation & reproduction steps
+│   └── assets/                        # 7 scalable vector graphics (SVGs) with explicit dimensions
+│
+└── task-05-spa-simulation/            # Week 5: Developing a Single Page Application (SPA) Simulation
+    ├── index.html                     # Single application shell & HTML5 landmarks
+    ├── css/style.css                  # Modern CSS3 stylesheet (design tokens, fluid grid)
+    ├── js/                            # Modular ES2022 JavaScript architecture
+    │   ├── app.js                     # View controllers, reactive filters, form validation
+    │   ├── router.js                  # HTML5 History API client-side router & live announcer
+    │   └── data.js                    # Mock data store (courses, projects, telemetry)
+    ├── assets/                        # 8 custom vector SVG illustrations & thumbnails
+    ├── report.md                      # 19-section formal technical implementation report
+    ├── report.pdf                     # Publication-grade PDF report
     ├── report.docx                    # Formatted Microsoft Word Technical Report
-    ├── README.md                      # Technical documentation & reproduction steps
-    └── assets/                        # 7 scalable vector graphics (SVGs) with explicit dimensions
+    ├── README.md                      # Technical documentation & Windows run guide
+    ├── server.py                      # Lightweight SPA development server
+    └── task-05-spa-simulation.zip     # Complete standalone submission archive
 ```
 
 ---
@@ -145,6 +160,21 @@ digital-design-projects/
 
 ---
 
+### Task 05: Developing a Single Page Application (SPA) Simulation — DevSpace Learning Hub
+- **Directory:** [`task-05-spa-simulation/`](task-05-spa-simulation/)
+- **Concept:** DevSpace — High-performance interactive engineering education portal featuring zero-reload client-side routing, live curriculum search and category filters, student project portfolios, and accessible form validation.
+- **Tech Stack:** Vanilla HTML5, CSS3 (Design Tokens, Grid minmax, Flexbox), Vanilla ECMAScript Modules (ES2022), HTML5 History API, Scalable Vector Graphics.
+- **Key SPA Features & Architectural Innovations:**
+  - **Zero-Reload Client Router:** Native `history.pushState()`, `history.replaceState()`, and `popstate` event listeners intercepting navigation and rendering views with 0ms flash.
+  - **Five Core Dynamic Views:** Home (`/`), Courses (`/courses`), Projects (`/projects`), About (`/about`), Contact (`/contact`), plus an accessible 404 Not Found view.
+  - **Reactive Search & Category Filters:** Live debounced title search combined with multi-category filter buttons (`Frontend`, `Backend`, `UI/UX`, `Cloud`, `Data`) and empty state recovery.
+  - **Student Portfolio Interactivity:** Reactive star counters with local state toggles, status pills, and accessible specification modals with `Escape` key focus dismissal.
+  - **Accessible Form Validation (WCAG 2.2 AA):** Real-time client-side input validation, regex email validation, live alert error regions, and simulated submission confirmation.
+  - **Screen Reader Route Synchronization:** Off-screen ARIA live region (`#route-announcer`) updates on every route transition with `aria-live="polite"`.
+  - **Flawless Multi-Viewport Fluidity:** 100% verified 0px horizontal overflow across 320px, 375px, 768px, and 1440px device viewports.
+
+---
+
 ## How to Run & View Locally
 
 ### Option 1: Direct File Launch in Browser
@@ -153,6 +183,7 @@ Open any project's entrypoint directly in any modern web browser:
 - **Week 2:** Open `task-2/index.html`
 - **Week 3:** Open `task-03/index.html`
 - **Week 4:** Open `task-04-performance-accessibility/index.html`
+- **Week 5:** Served via local HTTP server (`server.py` or `python -m http.server`) due to native ES modules.
 
 ### Option 2: Local HTTP Server (Python)
 From the repository root, start a lightweight web server:
@@ -169,9 +200,12 @@ cd task-03 && python -m http.server 3000
 
 # To run Week 4:
 cd task-04-performance-accessibility && python -m http.server 3000
+
+# To run Week 5 (SPA with History API rewrite):
+cd task-05-spa-simulation && python server.py 8000
 ```
 
-Open `http://localhost:3000` in your web browser.
+Open `http://localhost:8000` (or `http://localhost:3000`) in your web browser.
 
 ---
 
@@ -209,6 +243,20 @@ Open `http://localhost:3000` in your web browser.
 - [**Technical Report (Word Document)**](task-04-performance-accessibility/report.docx): Formatted Microsoft Word report with executive summary, metadata, WCAG matrix, and empirical audit data.
 - [**Technical README**](task-04-performance-accessibility/README.md): Full technical documentation, architectural breakdown, reproduction steps, and audit instructions.
 - [**Optimized Vector Assets**](task-04-performance-accessibility/assets/): 7 scalable vector graphics (SVGs) with explicit aspect ratios and dimension attributes.
+
+### Week 5 Deliverables (`task-05-spa-simulation/`)
+- [**Single Application Entrypoint**](task-05-spa-simulation/index.html): Semantic HTML5 application shell with persistent header, footer, skip link, and `#route-announcer`.
+- [**Client-Side Router**](task-05-spa-simulation/js/router.js): Native HTML5 History API router managing `pushState`, `replaceState`, `popstate`, title sync, and ARIA announcements.
+- [**Application View Controllers**](task-05-spa-simulation/js/app.js): Modular rendering logic for Home, Courses, Projects, About, Contact, and 404 views.
+- [**Mock Domain Store**](task-05-spa-simulation/js/data.js): Encapsulated state store with 8 course tracks, 6 student projects, metrics, and testimonials.
+- [**Design System Stylesheet**](task-05-spa-simulation/css/style.css): 1,120 lines of modern CSS3 (blue-purple design tokens, fluid clamp(), zero-overflow grid).
+- [**Technical Implementation Report (Markdown)**](task-05-spa-simulation/report.md): 19-section comprehensive engineering report detailing architecture, History API lifecycle, and test metrics.
+- [**Technical Report (PDF)**](task-05-spa-simulation/report.pdf): Publication-grade PDF report.
+- [**Technical Report (Word Document)**](task-05-spa-simulation/report.docx): Formatted Microsoft Word Technical Report.
+- [**Technical README**](task-05-spa-simulation/README.md): Comprehensive documentation, Windows launch guide, and route verification methodology.
+- [**Development Server**](task-05-spa-simulation/server.py): Zero-dependency Python SPA development server with automatic URL rewrite support.
+- [**Submission Archive**](task-05-spa-simulation/task-05-spa-simulation.zip): Verified standalone ZIP archive containing all runnable files and deliverables.
+- [**Vector Assets**](task-05-spa-simulation/assets/): 8 custom vector SVGs with explicit intrinsic dimensions.
 
 ---
 
