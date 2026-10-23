@@ -59,19 +59,26 @@ digital-design-projects/
 │   │   └── avatar-priya.svg
 │   └── test_previews/                 # Headless Chrome multi-viewport test captures
 │
-└── task-03/                           # Week 3: JavaScript Interactive User Experience
-    ├── index.html                     # Semantic HTML5 dynamic web app (ApexHub Innovation Space)
-    ├── css/
-    │   └── style.css                  # 1,960 lines of responsive CSS, light/dark themes
-    ├── js/
-    │   └── script.js                  # 826 lines of pure Vanilla JS (Theme, Calc, Accordion, Validation)
-    ├── assets/                        # 7 custom vector SVG illustrations & avatars
-    ├── report/
-    │   ├── Week_3_Technical_Report.docx      # 14-section formal Microsoft Word Technical Report
-    │   └── Week_3_Submission_Description.txt # 295-word submission portal description
-    ├── test_previews/                 # 14 automated Playwright viewport screenshots
-    ├── test_summary.json              # Playwright automated test metrics (0px overflow)
-    └── README.md                      # Task 03 technical documentation
+├── task-03/                           # Week 3: JavaScript Interactive User Experience
+│   ├── index.html                     # Semantic HTML5 dynamic web app (ApexHub Innovation Space)
+│   ├── css/
+│   │   └── style.css                  # 1,960 lines of responsive CSS, light/dark themes
+│   ├── js/
+│   │   └── script.js                  # 826 lines of pure Vanilla JS (Theme, Calc, Accordion, Validation)
+│   ├── assets/                        # 7 custom vector SVG illustrations & avatars
+│   ├── report/
+│   │   ├── Week_3_Technical_Report.docx      # 14-section formal Microsoft Word Technical Report
+│   │   └── Week_3_Submission_Description.txt # 295-word submission portal description
+│   ├── test_previews/                 # 14 automated Playwright viewport screenshots
+│   ├── test_summary.json              # Playwright automated test metrics (0px overflow)
+│   └── README.md                      # Task 03 technical documentation
+│
+└── task-04-performance-accessibility/ # Week 4: Enhancing Web Page Performance & Accessibility
+    ├── index.html                     # Optimized semantic HTML5 webpage (ApexHub)
+    ├── style.css                      # Modular CSS3 stylesheet (1,159 lines, zero-overflow grid)
+    ├── report.md                      # Comprehensive 13-section technical report with Lighthouse audits
+    ├── README.md                      # Technical documentation & reproduction steps
+    └── assets/                        # 7 scalable vector graphics (SVGs) with explicit dimensions
 ```
 
 ---
@@ -122,6 +129,21 @@ digital-design-projects/
 
 ---
 
+### Task 04: Enhancing Web Page Performance & Accessibility — ApexHub Innovation Space
+- **Directory:** [`task-04-performance-accessibility/`](task-04-performance-accessibility/)
+- **Concept:** ApexHub Innovation Space — High-performance, fully accessible showcase demonstrating WCAG 2.2 Level AA compliance, Core Web Vitals optimization, and strict semantic HTML5 engineering.
+- **Tech Stack:** Semantic HTML5, CSS3 (Modern Custom Properties, CSS Grid, Flexbox), Zero External Blocking Dependencies, Vector SVGs.
+- **Key Performance & Accessibility Optimizations:**
+  - **Lighthouse Performance Score:** **100/100** (FCP: 0.2s, LCP: 0.4s, CLS: 0.000, Speed Index: 0.4s, TBT: 10ms).
+  - **Lighthouse Accessibility Score:** **97/100** (Full WCAG 2.2 AA contrast compliance, descriptive labels, live error feedback, skip link).
+  - **Lighthouse Best Practices & SEO:** **100/100** across both categories.
+  - **Zero Blocking Scripts & Fonts:** System font stack (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto...`), inline SVG icons, zero render-blocking Google Font network calls.
+  - **Zero Layout Shift (CLS: 0.000):** Explicit `width` and `height` attributes on all SVGs, `aspect-ratio` containers, and `contain-intrinsic-size` where applicable.
+  - **Accessible Form Controls:** Explicit `<label for="...">` associations, `aria-required`, `aria-describedby`, client-side pattern matching, and live region status announcers.
+  - **Fluid Typography & Responsive Design:** Clamp-based fluid sizing, CSS Grid/Flexbox architectures, tested 0px overflow across 320px, 375px, 768px, and 1440px.
+
+---
+
 ## How to Run & View Locally
 
 ### Option 1: Direct File Launch in Browser
@@ -129,6 +151,7 @@ Open any project's entrypoint directly in any modern web browser:
 - **Week 1:** Open `task-01-static-webpage/index.html`
 - **Week 2:** Open `task-2/index.html`
 - **Week 3:** Open `task-03/index.html`
+- **Week 4:** Open `task-04-performance-accessibility/index.html`
 
 ### Option 2: Local HTTP Server (Python)
 From the repository root, start a lightweight web server:
@@ -142,6 +165,9 @@ cd task-2 && python -m http.server 3000
 
 # To run Week 3:
 cd task-03 && python -m http.server 3000
+
+# To run Week 4:
+cd task-04-performance-accessibility && python -m http.server 3000
 ```
 
 Open `http://localhost:3000` in your web browser.
@@ -174,6 +200,13 @@ Open `http://localhost:3000` in your web browser.
 - [**Submission Description**](task-03/report/Week_3_Submission_Description.txt): 295-word portal submission description text.
 - [**Automated Test Summary**](task-03/test_summary.json): Playwright automated test metrics verifying 0px overflow and 100% asset loading.
 - [**Test Previews**](task-03/test_previews/): 14 cross-device screenshots and interactive state captures.
+
+### Week 4 Deliverables (`task-04-performance-accessibility/`)
+- [**Webpage Entrypoint**](task-04-performance-accessibility/index.html): Highly-optimized semantic HTML5 web page with WCAG 2.2 Level AA accessibility.
+- [**Stylesheet**](task-04-performance-accessibility/style.css): Production CSS3 stylesheet (1,159 lines, modern color palette `#2563eb`, `#4f46e5`, `#7c3aed`, system typography, `:focus-visible`).
+- [**Technical Report (Markdown)**](task-04-performance-accessibility/report.md): 13-section technical report with before/after empirical Lighthouse audit tables, Core Web Vitals breakdown, and WCAG criteria compliance.
+- [**Technical README**](task-04-performance-accessibility/README.md): Full technical documentation, architectural breakdown, reproduction steps, and audit instructions.
+- [**Optimized Vector Assets**](task-04-performance-accessibility/assets/): 7 scalable vector graphics (SVGs) with explicit aspect ratios and dimension attributes.
 
 ---
 

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ApexHub is a premier, high-performance sustainable co-working and tech innovation campus in Tech City. Featuring private studios, rapid prototyping labs, and gigabit fiber infrastructure.">
+  <meta name="color-scheme" content="light">
+  <title>ApexHub | High-Performance Tech Coworking &amp; Prototyping Labs</title>
+  
+  <!-- Inline Zero-Request SVG Favicon (Eliminates 404) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M16 6L24 22H20L16 13.5L12 22H8L16 6Z' fill='%23ffffff'/%3E%3C/svg%3E">
+  
+  <!-- Critical Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip Navigation Link (WCAG 2.4.1) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Announcement Banner -->
+  <aside class="announcement-bar" aria-label="Campus announcement">
+    <div class="container announcement-inner">
+      <span class="announcement-badge">New Launch</span>
+      <p class="announcement-text">
+        Hardware Prototyping Lab &amp; Clean Room 2.0 now open for deep-tech founders.
+        <a href="#spaces" class="announcement-link">Explore workspace tiers <span aria-hidden="true">&rarr;</span></a>
+      </p>
+    </div>
+  </aside>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand-logo" aria-label="ApexHub Home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="#2563eb"/>
+            <path d="M16 6L24 22H20L16 13.5L12 22H8L16 6Z" fill="#ffffff"/>
+            <circle cx="16" cy="24" r="2.5" fill="#6366f1"/>
+          </svg>
+        </span>
+        <span class="brand-text">Apex<span class="brand-accent">Hub</span></span>
+      </a>
+
+      <!-- Accessible Mobile Navigation Toggle -->
+      <button type="button" class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#spaces" class="nav-link">Spaces</a></li>
+          <li><a href="#amenities" class="nav-link">Infrastructure</a></li>
+          <li><a href="#stories" class="nav-link">Stories</a></li>
+          <li><a href="#tour-booking" class="btn btn-primary nav-cta">Schedule a Tour</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="overview" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Zero-Carbon Campus &bull; 99.99% Power &bull; Dual Gigabit Fiber
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            Where Modern Tech Teams &amp; Hardware Founders <span class="text-gradient">Build the Future</span>
+          </h1>
+          <p class="hero-lead">
+            ApexHub is a modern, sustainable coworking and innovation campus engineered for engineering squads, AI startups, and hardware creators. Flexible private studios, soundproof meeting suites, and rapid prototyping labs with transparent, all-inclusive pricing.
+          </p>
+          <div class="hero-actions">
+            <a href="#tour-booking" class="btn btn-primary btn-lg">Book a Campus Tour</a>
+            <a href="#spaces" class="btn btn-secondary btn-lg">Explore Workspaces</a>
+          </div>
+          <div class="hero-metrics" role="region" aria-label="Campus key statistics">
+            <div class="metric-item">
+              <span class="metric-val">12,000+</span>
+              <span class="metric-lbl">Sq. Ft. Innovation Space</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-val">100%</span>
+              <span class="metric-lbl">Renewable Solar Powered</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-val">140+</span>
+              <span class="metric-lbl">Resident Tech Startups</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <figure class="hero-figure">
+            <img 
+              src="assets/hero-workspace.svg" 
+              alt="Isometric illustration of modern sustainable tech coworking hub with collaboration spaces and solar panels" 
+              class="hero-image" 
+              width="600" 
+              height="450" 
+              loading="eager" 
+              fetchpriority="high"
+            >
+            <figcaption class="visually-hidden">ApexHub collaborative campus layout showcasing private engineering suites, shared hot desks, and sustainable solar architectural elements.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUE PROPOSITIONS -->
+    <section class="section features-section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Engineered for Focus</span>
+          <h2 id="features-title" class="section-title">Built from the Ground Up for Modern Knowledge Work</h2>
+          <p class="section-subtitle">We stripped away the gimmicks of legacy shared offices to create a pristine, acoustic, and technologically superior environment.</p>
+        </header>
+
+        <div class="grid grid-3">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Dedicated Isolated Subnets</h3>
+            <p class="feature-desc">Every company gets a private, VLAN-segmented subnet with enterprise WPA3-Enterprise security, dual redundant tier-1 fiber uplinks, and dedicated static IP options.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Transparent, No-Surprise Terms</h3>
+            <p class="feature-desc">All memberships include utilities, hyper-speed fiber internet, printing allowances, soundproof phone booths, and unlimited specialty barista coffee without hidden fees.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="feature-heading">24/7 Smart Biometric Access</h3>
+            <p class="feature-desc">Frictionless biometric and mobile smartphone door entry allows your team to sprint late nights or work across multiple global time zones with secure peace of mind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSPACE SOLUTIONS / TIERS -->
+    <section class="section spaces-section" id="spaces" aria-labelledby="spaces-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Workspace Options</span>
+          <h2 id="spaces-title" class="section-title">Flexible Plans for Every Stage of Growth</h2>
+          <p class="section-subtitle">From solo developers and distributed remote workers to scale-ups needing private 20-person engineering suites.</p>
+        </header>
+
+        <div class="grid grid-3">
+          <!-- Space Card 1 -->
+          <article class="space-card">
+            <div class="space-media">
+              <img 
+                src="assets/space-hotdesk.svg" 
+                alt="Hot desk open workspace with ergonomic chairs and natural daylight" 
+                class="space-image" 
+                width="400" 
+                height="240" 
+                loading="lazy" 
+                decoding="async"
+              >
+            </div>
+            <div class="space-body">
+              <div class="space-badge">Flexibility</div>
+              <h3 class="space-name">Hot Desk Flexible Pass</h3>
+              <p class="space-price"><span class="price-val">$199</span><span class="price-period"> / month</span></p>
+              <p class="space-desc">Ideal for solo engineers, consultants, and remote founders seeking an energizing, focus-first environment with zero friction.</p>
+              <ul class="space-features" aria-label="Hot Desk plan features">
+                <li>Unrestricted access to open workspace lounges</li>
+                <li>Ergonomic Herman Miller seating &amp; standing desks</li>
+                <li>500 Mbps redundant Wi-Fi 6 connectivity</li>
+                <li>5 hours/mo private conference room credits</li>
+              </ul>
+              <a href="#tour-booking" class="btn btn-outline space-btn">Request Hot Desk</a>
+            </div>
+          </article>
+
+          <!-- Space Card 2 -->
+          <article class="space-card space-card-featured">
+            <div class="space-media">
+              <span class="featured-ribbon">Most Popular</span>
+              <img 
+                src="assets/space-dedicated.svg" 
+                alt="Dedicated workstation setup with dual monitors and lockable cabinet" 
+                class="space-image" 
+                width="400" 
+                height="240" 
+                loading="lazy" 
+                decoding="async"
+              >
+            </div>
+            <div class="space-body">
+              <div class="space-badge">Stability</div>
+              <h3 class="space-name">Dedicated Workstation</h3>
+              <p class="space-price"><span class="price-val">$349</span><span class="price-period"> / month</span></p>
+              <p class="space-desc">Your permanent personal workspace with dual-monitor arm mounts, lockable under-desk storage, and static power channels.</p>
+              <ul class="space-features" aria-label="Dedicated Desk plan features">
+                <li>Permanent desk reserved exclusively for you</li>
+                <li>Hardwired Gigabit Ethernet &amp; dual-monitor mounts</li>
+                <li>Lockable storage pedestal &amp; personal filing unit</li>
+                <li>12 hours/mo conference room &amp; podcast booth credits</li>
+              </ul>
+              <a href="#tour-booking" class="btn btn-primary space-btn">Reserve Dedicated Desk</a>
+            </div>
+          </article>
+
+          <!-- Space Card 3 -->
+          <article class="space-card">
+            <div class="space-media">
+              <img 
+                src="assets/space-studio.svg" 
+                alt="Glass enclosed acoustic private team studio with conference table and whiteboards" 
+                class="space-image" 
+                width="400" 
+                height="240" 
+                loading="lazy" 
+                decoding="async"
+              >
+            </div>
+            <div class="space-body">
+              <div class="space-badge">Scale</div>
+              <h3 class="space-name">Private Team Studio</h3>
+              <p class="space-price"><span class="price-val">$899</span><span class="price-period"> / month</span></p>
+              <p class="space-desc">Acoustic, lockable glass suites tailored for 4 to 20-person teams seeking private culture, whiteboard walls, and custom branding.</p>
+              <ul class="space-features" aria-label="Private Studio plan features">
+                <li>Fully furnished soundproof glass suite with custom signage</li>
+                <li>Isolated VLAN subnet with dual 10Gbps fiber uplink</li>
+                <li>Dedicated internal conference area &amp; whiteboard walls</li>
+                <li>24/7 priority booking for presentation auditoriums</li>
+              </ul>
+              <a href="#tour-booking" class="btn btn-outline space-btn">Inquire for Teams</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES & INFRASTRUCTURE -->
+    <section class="section amenities-section" id="amenities" aria-labelledby="amenities-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Campus Amenities</span>
+          <h2 id="amenities-title" class="section-title">Everything You Need to Perform at Your Peak</h2>
+          <p class="section-subtitle">Every square foot is engineered to maximize productivity, physical comfort, and team focus.</p>
+        </header>
+
+        <div class="grid grid-4">
+          <div class="amenity-item">
+            <div class="amenity-icon" aria-hidden="true">&bull;</div>
+            <h3 class="amenity-title">Gigabit Redundant Fiber</h3>
+            <p class="amenity-desc">Dual carrier ISP fiber feeds with automatic failover guarantee zero dropped Zoom calls or video sync issues.</p>
+          </div>
+          <div class="amenity-item">
+            <div class="amenity-icon" aria-hidden="true">&bull;</div>
+            <h3 class="amenity-title">Acoustic Phone Suites</h3>
+            <p class="amenity-desc">Sixteen soundproof privacy booths with tuned ventilation, internal lighting, and acoustic dampening.</p>
+          </div>
+          <div class="amenity-item">
+            <div class="amenity-icon" aria-hidden="true">&bull;</div>
+            <h3 class="amenity-title">Hardware Prototyping Lab</h3>
+            <p class="amenity-desc">Equipped with 3D printers, laser cutters, oscilloscope benches, and ESD-safe soldering stations.</p>
+          </div>
+          <div class="amenity-item">
+            <div class="amenity-icon" aria-hidden="true">&bull;</div>
+            <h3 class="amenity-title">Wellness &amp; Meditation Pods</h3>
+            <p class="amenity-desc">Dedicated dark quiet zones, ergonomic rejuvenation recliners, and private reflection rooms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / STORIES -->
+    <section class="section stories-section" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Resident Stories</span>
+          <h2 id="stories-title" class="section-title">Trusted by High-Velocity Engineering Teams</h2>
+          <p class="section-subtitle">Discover how founders and architects build and ship faster from ApexHub.</p>
+        </header>
+
+        <div class="grid grid-3">
+          <article class="story-card">
+            <div class="story-rating" role="img" aria-label="Rated 5 out of 5 stars">
+              <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <blockquote class="story-quote">
+              &ldquo;Relocating our 12-person distributed engineering squad to ApexHub cut our connectivity hiccups to zero. The private fiber subnet and acoustic rooms are indispensable.&rdquo;
+            </blockquote>
+            <div class="story-author">
+              <img 
+                src="assets/avatar-1.svg" 
+                alt="Portrait photo of Marcus Vance" 
+                class="author-avatar" 
+                width="48" 
+                height="48" 
+                loading="lazy" 
+                decoding="async"
+              >
+              <div class="author-details">
+                <span class="author-name">Marcus Vance</span>
+                <span class="author-role">VP Engineering, NovaPay Distributed</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="story-rating" role="img" aria-label="Rated 5 out of 5 stars">
+              <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <blockquote class="story-quote">
+              &ldquo;Having an in-house IoT prototyping lab alongside our workspace saved us months of PCB turnaround. We shipped our hardware MVP 6 weeks ahead of schedule.&rdquo;
+            </blockquote>
+            <div class="story-author">
+              <img 
+                src="assets/avatar-2.svg" 
+                alt="Portrait photo of Dr. Elena Rostova" 
+                class="author-avatar" 
+                width="48" 
+                height="48" 
+                loading="lazy" 
+                decoding="async"
+              >
+              <div class="author-details">
+                <span class="author-name">Dr. Elena Rostova</span>
+                <span class="author-role">Founder &amp; CEO, Solaria Green IoT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="story-rating" role="img" aria-label="Rated 5 out of 5 stars">
+              <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <blockquote class="story-quote">
+              &ldquo;The biophilic design and zero-carbon ethos reflect our company values. Our team genuinely looks forward to working here every single morning.&rdquo;
+            </blockquote>
+            <div class="story-author">
+              <img 
+                src="assets/avatar-3.svg" 
+                alt="Portrait photo of Kenji Sato" 
+                class="author-avatar" 
+                width="48" 
+                height="48" 
+                loading="lazy" 
+                decoding="async"
+              >
+              <div class="author-details">
+                <span class="author-name">Kenji Sato</span>
+                <span class="author-role">Principal Architect, Aetheria Spatial</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR BOOKING / INQUIRY FORM -->
+    <section class="section booking-section" id="tour-booking" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="booking-wrapper">
+          <div class="booking-intro">
+            <span class="section-tag">Campus Visit</span>
+            <h2 id="booking-title" class="section-title">Schedule a Personalized Campus Tour</h2>
+            <p class="booking-lead">
+              Experience the energy, acoustic comfort, and enterprise infrastructure of ApexHub firsthand. Our community managers will provide a guided walkthrough and day-pass trial.
+            </p>
+            <div class="booking-perks">
+              <div class="perk-item">
+                <span class="perk-check" aria-hidden="true">&#10003;</span>
+                <span>Complimentary full-day guest coworking pass included</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-check" aria-hidden="true">&#10003;</span>
+                <span>One-on-one consultation on custom bandwidth and private suites</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-check" aria-hidden="true">&#10003;</span>
+                <span>Specialty pour-over coffee tasting at the barista bar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-form-card">
+            <form id="tourForm" class="booking-form" novalidate aria-label="Campus tour booking form">
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name <span class="req" aria-hidden="true">*</span></label>
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="e.g. Sarah Connor" 
+                  required 
+                  autocomplete="name"
+                  aria-describedby="name-desc"
+                >
+                <span id="name-desc" class="visually-hidden">Please enter your first and last name.</span>
+                <span id="name-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="workEmail" class="form-label">Business Email <span class="req" aria-hidden="true">*</span></label>
+                <input 
+                  type="email" 
+                  id="workEmail" 
+                  name="workEmail" 
+                  class="form-input" 
+                  placeholder="sarah@company.io" 
+                  required 
+                  autocomplete="email"
+                  aria-describedby="email-desc"
+                >
+                <span id="email-desc" class="visually-hidden">We will send tour confirmation details to this address.</span>
+                <span id="email-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <!-- Phone Field -->
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number <span class="req" aria-hidden="true">*</span></label>
+                <input 
+                  type="tel" 
+                  id="phoneNumber" 
+                  name="phoneNumber" 
+                  class="form-input" 
+                  placeholder="+1 (555) 019-2834" 
+                  required 
+                  autocomplete="tel"
+                >
+                <span id="phone-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <!-- Workspace Tier Selection -->
+              <div class="form-group">
+                <label for="workspaceTier" class="form-label">Interested Workspace Tier <span class="req" aria-hidden="true">*</span></label>
+                <select id="workspaceTier" name="workspaceTier" class="form-select" required>
+                  <option value="" disabled selected>Select a workspace tier</option>
+                  <option value="hot-desk">Hot Desk Flexible Pass ($199/mo)</option>
+                  <option value="dedicated-desk">Dedicated Workstation ($349/mo)</option>
+                  <option value="private-studio">Private Team Studio ($899/mo)</option>
+                  <option value="hardware-lab">Hardware Prototyping Lab Pass ($549/mo)</option>
+                </select>
+                <span id="tier-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <!-- Planned Date -->
+              <div class="form-group">
+                <label for="tourDate" class="form-label">Preferred Tour Date <span class="req" aria-hidden="true">*</span></label>
+                <input 
+                  type="date" 
+                  id="tourDate" 
+                  name="tourDate" 
+                  class="form-input" 
+                  required
+                >
+                <span id="date-error" class="form-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <!-- Special Notes -->
+              <div class="form-group">
+                <label for="specialNotes" class="form-label">Team Size or Special Infrastructure Needs</label>
+                <textarea 
+                  id="specialNotes" 
+                  name="specialNotes" 
+                  class="form-textarea" 
+                  rows="3" 
+                  placeholder="Tell us about your team size, server rack requirements, or prototype testing needs..."
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                Confirm Campus Tour
+              </button>
+
+              <!-- Accessible Live Status Region (WCAG 4.1.3) -->
+              <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="#top" class="brand-logo" aria-label="ApexHub Home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#2563eb"/>
+              <path d="M16 6L24 22H20L16 13.5L12 22H8L16 6Z" fill="#ffffff"/>
+              <circle cx="16" cy="24" r="2.5" fill="#6366f1"/>
+            </svg>
+          </span>
+          <span class="brand-text">Apex<span class="brand-accent">Hub</span></span>
+        </a>
+        <p class="footer-desc">
+          Sustainable, zero-carbon technology coworking and hardware prototyping campus for modern founders and remote squads.
+        </p>
+        <p class="footer-copy">&copy; 2026 ApexHub Innovation Spaces Inc. All rights reserved.</p>
+      </div>
+
+      <nav class="footer-nav-col" aria-label="Footer Quick Links">
+        <h3 class="footer-heading">Workspaces</h3>
+        <ul class="footer-links">
+          <li><a href="#spaces">Hot Desk Passes</a></li>
+          <li><a href="#spaces">Dedicated Workstations</a></li>
+          <li><a href="#spaces">Private Team Studios</a></li>
+          <li><a href="#amenities">Hardware Clean Lab</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav-col" aria-label="Footer Company Information">
+        <h3 class="footer-heading">Campus</h3>
+        <ul class="footer-links">
+          <li><a href="#overview">About ApexHub</a></li>
+          <li><a href="#amenities">Infrastructure Specs</a></li>
+          <li><a href="#stories">Resident Stories</a></li>
+          <li><a href="#tour-booking">Book a Tour</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-nav-col">
+        <h3 class="footer-heading">Visit Us</h3>
+        <address class="footer-address">
+          42 Innovation Blvd, Suite 400<br>
+          Silicon Tech District, CA 94016<br>
+          <a href="mailto:contact@apexhub.space" class="footer-contact-link">contact@apexhub.space</a><br>
+          <a href="tel:+15550192834" class="footer-contact-link">+1 (555) 019-2834</a>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal Accessible Interaction Script (Zero external dependencies, <1 KB) -->
+  <script>
+    (function () {
+      'use strict';
+
+      // 1. Mobile Navigation Toggle with ARIA State Synchronization
+      const navToggle = document.getElementById('navToggle');
+      const primaryNav = document.getElementById('primaryNav');
+
+      if (navToggle && primaryNav) {
+        navToggle.addEventListener('click', function () {
+          const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+          const nextState = !isExpanded;
+          navToggle.setAttribute('aria-expanded', String(nextState));
+          primaryNav.classList.toggle('nav-open', nextState);
+          navToggle.setAttribute('aria-label', nextState ? 'Close navigation menu' : 'Toggle navigation menu');
+        });
+
+        // Close drawer on link selection
+        primaryNav.querySelectorAll('.nav-link, .nav-cta').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navToggle.setAttribute('aria-expanded', 'false');
+            primaryNav.classList.remove('nav-open');
+            navToggle.setAttribute('aria-label', 'Toggle navigation menu');
+          });
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && primaryNav.classList.contains('nav-open')) {
+            navToggle.setAttribute('aria-expanded', 'false');
+            primaryNav.classList.remove('nav-open');
+            navToggle.focus();
+          }
+        });
+      }
+
+      // 2. Accessible Client-Side Form Validation (WCAG 3.3.1, 3.3.2)
+      const form = document.getElementById('tourForm');
+      const formStatus = document.getElementById('formStatus');
+
+      if (form && formStatus) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          formStatus.textContent = '';
+          formStatus.className = 'form-status';
+
+          let hasErrors = false;
+
+          // Helper validator
+          function validateField(id, errorId, isValid, msg) {
+            const input = document.getElementById(id);
+            const err = document.getElementById(errorId);
+            if (!isValid) {
+              input.classList.add('is-invalid');
+              input.setAttribute('aria-invalid', 'true');
+              err.textContent = msg;
+              hasErrors = true;
+            } else {
+              input.classList.remove('is-invalid');
+              input.removeAttribute('aria-invalid');
+              err.textContent = '';
+            }
+          }
+
+          const name = document.getElementById('fullName').value.trim();
+          validateField('fullName', 'name-error', name.length >= 2, 'Please enter your full name (at least 2 characters).');
+
+          const email = document.getElementById('workEmail').value.trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          validateField('workEmail', 'email-error', emailRegex.test(email), 'Please enter a valid business email address.');
+
+          const phone = document.getElementById('phoneNumber').value.trim();
+          const phoneRegex = /^[\d\s+\-().]{7,20}$/;
+          validateField('phoneNumber', 'phone-error', phoneRegex.test(phone), 'Please enter a valid phone number (at least 7 digits).');
+
+          const tier = document.getElementById('workspaceTier').value;
+          validateField('workspaceTier', 'tier-error', tier !== '', 'Please select an interested workspace tier.');
+
+          const date = document.getElementById('tourDate').value;
+          validateField('tourDate', 'date-error', date !== '', 'Please select your preferred tour date.');
+
+          if (hasErrors) {
+            formStatus.className = 'form-status status-error';
+            formStatus.textContent = 'Please correct the highlighted fields above before scheduling.';
+            // Move focus to first invalid input
+            const firstInvalid = form.querySelector('.is-invalid');
+            if (firstInvalid) firstInvalid.focus();
+          } else {
+            formStatus.className = 'form-status status-success';
+            formStatus.textContent = 'Thank you! Your campus tour has been scheduled. Our team will email your confirmation pass shortly.';
+            form.reset();
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
