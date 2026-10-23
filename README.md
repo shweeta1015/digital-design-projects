@@ -34,7 +34,7 @@ digital-design-projects/
 │       ├── fullpage_375w.png
 │       └── test_summary.json
 │
-└── week-02-responsive-web-design/     # Week 2: Implementation of Responsive Web Design
+└── task-2/                            # Week 2: Implementation of Responsive Web Design
     ├── index.html                     # Semantic HTML5 webpage (Aura Digital Studio)
     ├── style.css                      # Production CSS3 stylesheet (50 tokens, fluid clamp())
     ├── script.js                      # Vanilla JS (ARIA mobile drawer, real-time form validation)
@@ -88,8 +88,8 @@ digital-design-projects/
 
 ---
 
-### Week 02: Implementation of Responsive Web Design — Aura Digital Studio
-- **Directory:** [`week-02-responsive-web-design/`](week-02-responsive-web-design/)
+### Task 2: Implementation of Responsive Web Design — Aura Digital Studio
+- **Directory:** [`task-2/`](task-2/)
 - **Concept:** Aura Digital Studio — A premier digital product and responsive engineering agency delivering bespoke web applications, design systems, and cloud-native solutions.
 - **Design Aesthetic:** Clean, modern, light theme with pure white backgrounds (`#ffffff`, `#f8fafc`), crisp slate borders (`#e2e8f0`), and vibrant lavender (`#7c3aed`) & royal cobalt blue (`#2563eb`) accent palettes.
 - **Tech Stack:** Semantic HTML5, CSS3 (CSS Grid L2, Flexbox, Custom Properties), Vanilla JavaScript (ECMAScript 2022), Vector SVGs, Playwright + Headless Chromium test engine.
@@ -108,7 +108,7 @@ digital-design-projects/
 ### Option 1: Direct File Launch in Browser
 Open either project's entrypoint directly in any modern web browser (Google Chrome, Microsoft Edge, Firefox, or Safari):
 - **Week 1:** Open `task-01-static-webpage/index.html`
-- **Week 2:** Open `week-02-responsive-web-design/index.html`
+- **Week 2:** Open `task-2/index.html`
 
 ### Option 2: Local HTTP Server (Python)
 From the repository root, start a lightweight web server:
@@ -119,7 +119,7 @@ cd task-01-static-webpage
 python -m http.server 3000
 
 # To run Week 2:
-cd week-02-responsive-web-design
+cd task-2
 python -m http.server 3000
 ```
 
@@ -135,14 +135,14 @@ Open `http://localhost:3000` in your web browser.
 - [**Assignment Report (PDF)**](task-01-static-webpage/report.pdf): Publication-grade PDF report.
 - [**Assignment Report (Word Document)**](task-01-static-webpage/report.docx): Formatted Microsoft Word report.
 
-### Week 2 Deliverables (`week-02-responsive-web-design/`)
-- [**Webpage Entrypoint**](week-02-responsive-web-design/index.html): Semantic HTML5 responsive agency webpage.
-- [**Stylesheet**](week-02-responsive-web-design/style.css): Modular CSS3 design system with 50 custom property tokens and 4 media queries.
-- [**Client Script**](week-02-responsive-web-design/script.js): Accessible mobile navigation and client-side form validation.
-- [**Technical Implementation Report (Markdown)**](week-02-responsive-web-design/report.md): 470+ line comprehensive engineering report with code snippets, breakpoint tables, and test matrices.
-- [**Technical Report (PDF)**](week-02-responsive-web-design/report.pdf): Formatted publication-ready PDF document.
-- [**Technical Report (Word Document)**](week-02-responsive-web-design/report.docx): Formatted Microsoft Word document with embedded cross-device screenshots.
-- [**Automated Test Summary**](week-02-responsive-web-design/test_summary.json): Machine-readable verification log from Playwright automated runs.
+### Week 2 Deliverables (`task-2/`)
+- [**Webpage Entrypoint**](task-2/index.html): Semantic HTML5 responsive agency webpage.
+- [**Stylesheet**](task-2/style.css): Modular CSS3 design system with 50 custom property tokens and 4 media queries.
+- [**Client Script**](task-2/script.js): Accessible mobile navigation and client-side form validation.
+- [**Technical Implementation Report (Markdown)**](task-2/report.md): 470+ line comprehensive engineering report with code snippets, breakpoint tables, and test matrices.
+- [**Technical Report (PDF)**](task-2/report.pdf): Formatted publication-ready PDF document.
+- [**Technical Report (Word Document)**](task-2/report.docx): Formatted Microsoft Word document with embedded cross-device screenshots.
+- [**Automated Test Summary**](task-2/test_summary.json): Machine-readable verification log from Playwright automated runs.
 
 ---
 

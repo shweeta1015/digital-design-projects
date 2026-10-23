@@ -5,7 +5,7 @@
 **Program:** YUVA Intern  
 **Assignment:** Week 2 — Implementation of Responsive Web Design  
 **Project Name:** Aura Digital Studio — Responsive Digital Agency Website  
-**Project Location:** `week-02-responsive-web-design/`  
+**Project Location:** `task-2/`  
 **Evaluation Target:** Production-Grade Responsive Web Design, Semantic HTML5, Advanced CSS3 (Grid & Flexbox), Fluid `clamp()`, Mobile-First Methodology, Automated Browser Testing  
 
 ---
@@ -70,10 +70,10 @@ Modern web users access digital interfaces across thousands of distinct device f
 
 ## 4. Project Structure & Architectural Organization
 
-The project is structured with modular separation of concerns inside `week-02-responsive-web-design/`:
+The project is structured with modular separation of concerns inside `task-2/`:
 
 ```
-week-02-responsive-web-design/
+task-2/
 ├── index.html                   # 716 lines, 37,018 bytes — Complete semantic HTML5 webpage
 ├── style.css                    # 1,589 lines, 36,220 bytes — Complete CSS3 stylesheet (50 tokens, 4 breakpoints)
 ├── script.js                    # 234 lines, 6,756 bytes — Vanilla JS navigation & client-side form validation
@@ -431,7 +431,7 @@ The Week 2 Responsive Web Design assignment successfully demonstrates senior-lev
 ## 16. Complete Project File Inventory
 
 ```
-week-02-responsive-web-design/
+task-2/
 ├── index.html                   # 716 lines, 37,018 bytes — Complete semantic HTML5 webpage (W3C Nu Valid)
 ├── style.css                    # 1,589 lines, 36,220 bytes — Complete CSS3 stylesheet (50 variables, 4 breakpoints)
 ├── script.js                    # 234 lines, 6,756 bytes — Vanilla JS navigation & form validation
