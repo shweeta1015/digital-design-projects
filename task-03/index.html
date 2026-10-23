@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ApexHub is a high-performance, eco-conscious co-working space and tech innovation hub designed for software engineers, hardware creators, and sustainable startups.">
+  <meta name="author" content="YUVA Intern — Frontend Developer Intern">
+  <meta name="theme-color" content="#2563eb">
+  <title>ApexHub | Interactive Tech Innovation Space &amp; Co-Working Hub</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%232563eb%22/><path d=%22M16 6L24 22H20L16 13.5L12 22H8L16 6Z%22 fill=%22%23fff%22/><circle cx=%2216%22 cy=%2224%22 r=%222.5%22 fill=%22%2338bdf8%22/></svg>">
+</head>
+<body>
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header" id="header" role="banner">
+    <div class="container header-container">
+      <a href="#top" class="brand-logo" aria-label="ApexHub Home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="#2563eb"/>
+            <path d="M16 6L24 22H20L16 13.5L12 22H8L16 6Z" fill="#ffffff"/>
+            <circle cx="16" cy="24" r="2.5" fill="#38bdf8"/>
+          </svg>
+        </span>
+        <span class="brand-name">Apex<span class="brand-accent">Hub</span></span>
+      </a>
+
+      <!-- Header Controls: Theme Toggle & Navigation -->
+      <div class="header-right">
+        <!-- Visual Theme Toggle Button (Light / Dark) -->
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch visual appearance theme" title="Toggle Light / Dark Theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-icon moon-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="visually-hidden" id="themeStatusText">Current theme: light</span>
+        </button>
+
+        <!-- Mobile Hamburger Navigation Toggle -->
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle primary navigation menu">
+          <span class="hamburger-bar" aria-hidden="true"></span>
+          <span class="hamburger-bar" aria-hidden="true"></span>
+          <span class="hamburger-bar" aria-hidden="true"></span>
+        </button>
+
+        <!-- Main Navigation Menu -->
+        <nav class="primary-nav" id="primaryNav" aria-label="Primary Navigation">
+          <ul class="nav-list" role="list">
+            <li class="nav-item"><a href="#overview" class="nav-link active">Overview</a></li>
+            <li class="nav-item"><a href="#spaces" class="nav-link">Spaces</a></li>
+            <li class="nav-item"><a href="#calculator" class="nav-link">Calculator</a></li>
+            <li class="nav-item"><a href="#amenities" class="nav-link">Amenities</a></li>
+            <li class="nav-item"><a href="#stories" class="nav-link">Stories</a></li>
+            <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="#tour-booking" class="btn btn-primary nav-cta">Book a Tour</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <!-- Main Landmark Content -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="overview" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        
+        <!-- Text Column -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="badge-pill">
+            <span class="badge-icon" aria-hidden="true">🌱</span>
+            <span class="badge-text">100% Solar-Powered Sustainable Innovation Hub</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            The Interactive Workspace for <span class="text-gradient">Modern Tech Builders</span>
+          </h1>
+
+          <p class="hero-description">
+            High-performance collaborative hubs, acoustic engineering pods, and specialized IoT prototyping labs built for ambitious software architects, hardware innovators, and climate-tech creators.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#spaces" class="btn btn-primary btn-large ripple-btn">Explore Spaces</a>
+            <a href="#calculator" class="btn btn-secondary btn-large ripple-btn">Estimate Pricing</a>
+            <a href="#tour-booking" class="btn btn-outline btn-large ripple-btn">Schedule Visit</a>
+          </div>
+
+          <!-- Dynamic Metrics Stat Card -->
+          <div class="hero-stats-card">
+            <div class="stat-item">
+              <span class="stat-number" data-target="18">18+</span>
+              <span class="stat-label">Global Hubs</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5400">5,400+</span>
+              <span class="stat-label">Active Innovators</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="99.9">99.9%</span>
+              <span class="stat-label">Fiber Uptime</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Column -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="visual-wrapper">
+            <img src="assets/hero-workspace.svg" alt="Isometric illustration of modern sustainable tech coworking hub with collaboration spaces and solar panels" class="hero-img" width="560" height="420" loading="eager">
+            <div class="floating-tag tag-top" aria-hidden="true">
+              <span class="tag-dot"></span> 10 Gbps Symmetrical Fiber
+            </div>
+            <div class="floating-tag tag-bottom" aria-hidden="true">
+              <span class="tag-icon">⚡</span> Zero-Carbon Certified
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SPACES FILTER SECTION -->
+    <section class="section spaces-section" id="spaces" aria-labelledby="spaces-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">Flexible Architecture</span>
+          <h2 id="spaces-title" class="section-title">Designed for Every Stage of Innovation</h2>
+          <p class="section-subtitle">Filter through our tailored environments built for deep focus, team collaboration, and physical product engineering.</p>
+        </div>
+
+        <!-- Interactive Filter Controls -->
+        <div class="filter-controls reveal-on-scroll" role="tablist" aria-label="Filter workspace categories">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All Environments</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="hotdesk">Hot Desks</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="dedicated">Dedicated Desks</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="studio">Private Studios</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="lab">Prototyping Labs</button>
+        </div>
+
+        <!-- Spaces Card Grid -->
+        <div class="spaces-grid" id="spacesGrid">
+
+          <!-- Card 1: Hot Desk -->
+          <article class="space-card reveal-on-scroll" data-category="hotdesk">
+            <div class="card-media">
+              <img src="assets/space-hotdesk.svg" alt="Hot desk flexible open workspace layout" width="380" height="220" loading="lazy">
+              <span class="card-tag">Flexible Daily Access</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">Dynamic Hot Desk</h3>
+                <span class="card-price">$199<span class="price-period">/mo</span></span>
+              </div>
+              <p class="card-desc">First-come ergonomic seating in naturally illuminated, biophilic collaboration zones with high-speed charging and sit-stand desks.</p>
+              <ul class="card-features" role="list">
+                <li>Ergonomic Herman Miller seating</li>
+                <li>Secure lockers &amp; phone booths</li>
+                <li>Artisan coffee &amp; kombucha bar</li>
+              </ul>
+              <button class="btn btn-secondary btn-full select-space-btn" data-space-name="Hot Desk" data-base-price="199">Select in Calculator</button>
+            </div>
+          </article>
+
+          <!-- Card 2: Dedicated Desk -->
+          <article class="space-card reveal-on-scroll" data-category="dedicated">
+            <div class="card-media">
+              <img src="assets/space-dedicated.svg" alt="Dedicated personal workstation with dual monitors" width="380" height="220" loading="lazy">
+              <span class="card-tag">Reserved Workstation</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">Dedicated Workstation</h3>
+                <span class="card-price">$349<span class="price-period">/mo</span></span>
+              </div>
+              <p class="card-desc">Your personal assigned desk with motorized height adjustability, dual 4K monitor arms, lockable under-desk filing, and 24/7 keycard access.</p>
+              <ul class="card-features" role="list">
+                <li>Personal motorized standing desk</li>
+                <li>Dual 4K display mounts</li>
+                <li>24/7 biometric hub entry</li>
+              </ul>
+              <button class="btn btn-secondary btn-full select-space-btn" data-space-name="Dedicated Desk" data-base-price="349">Select in Calculator</button>
+            </div>
+          </article>
+
+          <!-- Card 3: Private Studio -->
+          <article class="space-card reveal-on-scroll" data-category="studio">
+            <div class="card-media">
+              <img src="assets/space-studio.svg" alt="Acoustic glass enclosed team studio space" width="380" height="220" loading="lazy">
+              <span class="card-tag">Teams of 4 to 24</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">Acoustic Private Studio</h3>
+                <span class="card-price">$899<span class="price-period">/mo</span></span>
+              </div>
+              <p class="card-desc">Fully private, acoustically engineered glass suites featuring dedicated executive whiteboards, enterprise LAN, and customizable company branding.</p>
+              <ul class="card-features" role="list">
+                <li>Double-glazed sound isolation (STC 45)</li>
+                <li>Private meeting room credits</li>
+                <li>Isolated VLAN and static IP subnet</li>
+              </ul>
+              <button class="btn btn-secondary btn-full select-space-btn" data-space-name="Private Studio" data-base-price="899">Select in Calculator</button>
+            </div>
+          </article>
+
+          <!-- Card 4: Prototyping Lab -->
+          <article class="space-card reveal-on-scroll" data-category="lab">
+            <div class="card-media">
+              <img src="assets/space-studio.svg" alt="Hardware rapid prototyping laboratory" width="380" height="220" loading="lazy">
+              <span class="card-tag">Hardware &amp; IoT</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="card-title">Hardware Prototyping Lab</h3>
+                <span class="card-price">$549<span class="price-period">/mo</span></span>
+              </div>
+              <p class="card-desc">ESD-safe benches equipped with digital oscilloscopes, solder extraction stations, multi-material 3D printers, and CNC laser cutters.</p>
+              <ul class="card-features" role="list">
+                <li>Formlabs SLA &amp; Bambu FDM printers</li>
+                <li>Rigol 4-channel 100MHz scopes</li>
+                <li>Component bins and PCB rework tools</li>
+              </ul>
+              <button class="btn btn-secondary btn-full select-space-btn" data-space-name="Prototyping Lab" data-base-price="549">Select in Calculator</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PRICING & TEAM CALCULATOR WIDGET -->
+    <section class="section calculator-section" id="calculator" aria-labelledby="calc-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">Interactive Estimator</span>
+          <h2 id="calc-title" class="section-title">Transparent Team Pricing Calculator</h2>
+          <p class="section-subtitle">Customize your workspace plan, adjust team size, toggle annual savings, and calculate your exact monthly investment in real time.</p>
+        </div>
+
+        <div class="calc-widget reveal-on-scroll">
+          
+          <!-- Left Configuration Controls -->
+          <div class="calc-controls">
+            
+            <!-- Step 1: Base Plan Selection -->
+            <div class="calc-group">
+              <label class="calc-label" id="planSelectionLabel">1. Choose Primary Workspace Tier</label>
+              <div class="plan-options" role="radiogroup" aria-labelledby="planSelectionLabel">
+                <button type="button" class="plan-pill active" role="radio" aria-checked="true" data-plan="hotdesk" data-price="199">
+                  <span class="pill-name">Hot Desk</span>
+                  <span class="pill-rate">$199/mo</span>
+                </button>
+                <button type="button" class="plan-pill" role="radio" aria-checked="false" data-plan="dedicated" data-price="349">
+                  <span class="pill-name">Dedicated Desk</span>
+                  <span class="pill-rate">$349/mo</span>
+                </button>
+                <button type="button" class="plan-pill" role="radio" aria-checked="false" data-plan="studio" data-price="899">
+                  <span class="pill-name">Private Studio</span>
+                  <span class="pill-rate">$899/mo</span>
+                </button>
+                <button type="button" class="plan-pill" role="radio" aria-checked="false" data-plan="lab" data-price="549">
+                  <span class="pill-name">FabLab Pass</span>
+                  <span class="pill-rate">$549/mo</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Team Size Slider -->
+            <div class="calc-group">
+              <div class="slider-header">
+                <label for="teamSizeSlider" class="calc-label">2. Team Size</label>
+                <span class="slider-val" id="teamSizeValue">1 Member</span>
+              </div>
+              <input type="range" id="teamSizeSlider" class="custom-slider" min="1" max="30" value="1" step="1" aria-valuemin="1" aria-valuemax="30" aria-valuenow="1">
+              <div class="slider-ticks" aria-hidden="true">
+                <span>1</span>
+                <span>5</span>
+                <span>10</span>
+                <span>20</span>
+                <span>30 Members</span>
+              </div>
+            </div>
+
+            <!-- Step 3: Billing Duration Toggle -->
+            <div class="calc-group">
+              <label class="calc-label" id="billingCycleLabel">3. Billing Cadence</label>
+              <div class="billing-toggle-container" role="radiogroup" aria-labelledby="billingCycleLabel">
+                <button type="button" class="billing-btn active" role="radio" aria-checked="true" data-cycle="monthly">
+                  Monthly Billing
+                </button>
+                <button type="button" class="billing-btn" role="radio" aria-checked="false" data-cycle="annual">
+                  Annual Commitment <span class="discount-badge">Save 20%</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Optional Add-ons -->
+            <div class="calc-group">
+              <label class="calc-label">4. Specialized Add-ons (Per Team)</label>
+              <div class="addons-list">
+                <label class="addon-checkbox">
+                  <input type="checkbox" id="addonBiometric" data-addon-price="35">
+                  <span class="checkmark"></span>
+                  <span class="addon-text">
+                    <strong>24/7 Biometric Smart Keycard</strong>
+                    <span class="addon-fee">+$35 / mo</span>
+                  </span>
+                </label>
+                <label class="addon-checkbox">
+                  <input type="checkbox" id="addonFiber" data-addon-price="50">
+                  <span class="checkmark"></span>
+                  <span class="addon-text">
+                    <strong>Dedicated Static Fiber IP &amp; Isolated VLAN</strong>
+                    <span class="addon-fee">+$50 / mo</span>
+                  </span>
+                </label>
+                <label class="addon-checkbox">
+                  <input type="checkbox" id="addonHardware" data-addon-price="80">
+                  <span class="checkmark"></span>
+                  <span class="addon-text">
+                    <strong>Hardware Prototyping FabLab Access</strong>
+                    <span class="addon-fee">+$80 / mo</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Calculation Summary Card -->
+          <div class="calc-summary">
+            <h3 class="summary-title">Estimated Monthly Investment</h3>
+            
+            <div class="summary-breakdown">
+              <div class="summary-row">
+                <span class="row-label">Base Workspace Tier</span>
+                <span class="row-val" id="summaryTierName">Hot Desk ($199/mo)</span>
+              </div>
+              <div class="summary-row">
+                <span class="row-label">Team Multiplier</span>
+                <span class="row-val" id="summaryTeamCount">1 × Member</span>
+              </div>
+              <div class="summary-row">
+                <span class="row-label">Selected Add-ons</span>
+                <span class="row-val" id="summaryAddonsPrice">$0 / mo</span>
+              </div>
+              <div class="summary-row" id="discountRow" style="display: none;">
+                <span class="row-label discount-text">Annual 20% Discount</span>
+                <span class="row-val discount-val" id="summaryDiscountAmount">-$0 / mo</span>
+              </div>
+            </div>
+
+            <div class="summary-total-box">
+              <span class="total-label">Effective Monthly Total</span>
+              <div class="total-price-row">
+                <span class="currency-symbol">$</span>
+                <span class="total-amount" id="summaryTotalAmount">199</span>
+                <span class="total-frequency">/ month</span>
+              </div>
+              <span class="total-billed-info" id="summaryBilledInfo">Billed monthly with no long-term lock-in</span>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-full ripple-btn" id="applyToBookingBtn">
+              Apply Configuration to Tour Booking &rarr;
+            </button>
+            <p class="summary-guarantee">Includes 14-day zero-risk trial, flexible month-to-month terms, and full access to common areas.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES SECTION -->
+    <section class="section amenities-section" id="amenities" aria-labelledby="amenities-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">High Performance</span>
+          <h2 id="amenities-title" class="section-title">Built for Uncompromised Engineering Velocity</h2>
+          <p class="section-subtitle">Infrastructure designed with zero compromises so your team can focus exclusively on executing vision.</p>
+        </div>
+
+        <div class="amenities-grid">
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon" aria-hidden="true">🌐</div>
+            <h3 class="amenity-title">Multi-Gigabit Redundant Fiber</h3>
+            <p class="amenity-desc">10 Gbps symmetrical uplink with failover secondary circuits, enterprise BGP routing, and private VLAN isolation.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon" aria-hidden="true">🔋</div>
+            <h3 class="amenity-title">Clean Solar Power &amp; Tesla Microgrid</h3>
+            <p class="amenity-desc">Continuous clean power backed by commercial rooftop photovoltaics and industrial battery storage units.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon" aria-hidden="true">🎧</div>
+            <h3 class="amenity-title">Acoustic Engineering Pods</h3>
+            <p class="amenity-desc">Double-glazed privacy chambers with calibrated sound isolation for remote standups, podcasts, and confidential investor pitches.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon" aria-hidden="true">🛠️</div>
+            <h3 class="amenity-title">Hardware Rapid FabLab</h3>
+            <p class="amenity-desc">Precision solder benches, laser engravers, 3D printing farms, and electronic component inventory for quick IoT turns.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon" aria-hidden="true">☕</div>
+            <h3 class="amenity-title">Artisan Coffee &amp; Micro-Kitchens</h3>
+            <p class="amenity-desc">Locally roasted pour-over stations, continuous cold brew on tap, organic snack pantries, and purified alkaline water.</p>
+          </div>
+
+          <div class="amenity-card reveal-on-scroll">
+            <div class="amenity-icon" aria-hidden="true">🛡️</div>
+            <h3 class="amenity-title">Enterprise Biometric Security</h3>
+            <p class="amenity-desc">24/7 keycard authentication, encrypted perimeter CCTV, tamper-evident private studios, and SOC 2 compliant physical safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY STORIES / TESTIMONIALS -->
+    <section class="section stories-section" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">Verified Testimonials</span>
+          <h2 id="stories-title" class="section-title">Trusted by Engineering Leaders</h2>
+          <p class="section-subtitle">Hear how growing startups and senior developers scaled their products inside ApexHub.</p>
+        </div>
+
+        <div class="stories-grid">
+          <article class="story-card reveal-on-scroll">
+            <div class="story-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="story-quote">&ldquo;Relocating our 12-person distributed engineering squad to ApexHub cut our connectivity hiccups to zero. The private fiber subnet and acoustic rooms are indispensable.&rdquo;</p>
+            <div class="story-author">
+              <img src="assets/avatar-1.svg" alt="Portrait of Marcus Vance" class="author-avatar" width="48" height="48" loading="eager">
+              <div class="author-info">
+                <span class="author-name">Marcus Vance</span>
+                <span class="author-role">VP Engineering, NovaPay Distributed</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card reveal-on-scroll">
+            <div class="story-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="story-quote">&ldquo;Having an in-house IoT prototyping lab alongside our workspace saved us months of PCB turnaround. We shipped our hardware MVP 6 weeks ahead of schedule.&rdquo;</p>
+            <div class="story-author">
+              <img src="assets/avatar-2.svg" alt="Portrait of Dr. Elena Rostova" class="author-avatar" width="48" height="48" loading="eager">
+              <div class="author-info">
+                <span class="author-name">Dr. Elena Rostova</span>
+                <span class="author-role">Founder &amp; CEO, Solaria Green IoT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card reveal-on-scroll">
+            <div class="story-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="story-quote">&ldquo;The biophilic design and zero-carbon ethos reflect our company values. Our team genuinely looks forward to working here every single morning.&rdquo;</p>
+            <div class="story-author">
+              <img src="assets/avatar-3.svg" alt="Portrait of Kenji Sato" class="author-avatar" width="48" height="48" loading="eager">
+              <div class="author-info">
+                <span class="author-name">Kenji Sato</span>
+                <span class="author-role">Principal Architect, Aetheria Spatial</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE FAQ ACCORDION SECTION -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">Clarifications</span>
+          <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about membership options, billing flexibility, and building facilities.</p>
+        </div>
+
+        <div class="accordion" id="faqAccordion" role="region" aria-label="ApexHub Frequently Asked Questions">
+
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item reveal-on-scroll">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-1" id="faq-btn-1">
+                <span class="accordion-question">What is included with an ApexHub membership?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <div class="accordion-body">
+                All memberships include multi-gigabit symmetrical fiber Wi-Fi, ergonomic standing desks and seating, phone booth access, specialty espresso &amp; kombucha bar, kitchen privileges, standard mailing address services, and invite access to weekly tech founder talks and demo nights.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item reveal-on-scroll">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-2" id="faq-btn-2">
+                <span class="accordion-question">How flexible are the booking terms and cancellation policies?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <div class="accordion-body">
+                Hot desk and dedicated desk plans are 100% month-to-month with a simple 30-day notice policy. There are no lock-in setup fees or termination penalties. Annual plans offer a 20% discount with payment upfront and can be transferred to any of our 18 global locations seamlessly.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item reveal-on-scroll">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-3" id="faq-btn-3">
+                <span class="accordion-question">What equipment is available in the Hardware FabLab?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <div class="accordion-body">
+                Our FabLab features Formlabs 3+ SLA printers, Bambu Lab X1-Carbon multi-color FDM printers, Epilog laser cutters, Hakko temperature-controlled soldering stations with HEPA fume extraction, Rigol 4-channel oscilloscopes, thermal imaging cameras, and basic hand prototyping tools.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item reveal-on-scroll">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-4" id="faq-btn-4">
+                <span class="accordion-question">Can I access the hub outside standard business hours?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <div class="accordion-body">
+                Dedicated desk and private studio members enjoy full 24/7/365 biometric access through encrypted mobile NFC credentials. Hot desk members have standard access from 7:00 AM to 9:00 PM Monday through Saturday, with optional 24/7 keycard upgrades available anytime.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="accordion-item reveal-on-scroll">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-5" id="faq-btn-5">
+                <span class="accordion-question">How does team scaling and billing calculation work?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5" hidden>
+              <div class="accordion-body">
+                You can easily add or remove team members via your digital member dashboard. Team billing scales proportionally, and teams of 5 or more automatically receive unified monthly invoicing, pooled conference room credits, and dedicated Slack channels with our community management staff.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TOUR BOOKING FORM -->
+    <section class="section booking-section" id="tour-booking" aria-labelledby="booking-title">
+      <div class="container booking-container">
+        <div class="booking-wrapper reveal-on-scroll">
+          
+          <div class="booking-intro">
+            <span class="section-badge">Personalized Visit</span>
+            <h2 id="booking-title" class="booking-heading">Schedule Your In-Person Experience</h2>
+            <p class="booking-sub">Tour our prototyping facilities, experience our acoustic meeting rooms, and enjoy complimentary day-pass access to work directly from the space.</p>
+            
+            <div class="booking-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">⏱️</span>
+                <span>30-minute tailored tour with a community architect</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">☕</span>
+                <span>Complimentary coffee bar tasting &amp; member intro</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">💻</span>
+                <span>Full day pass included for you and your co-founder</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h4 class="contact-card-title">ApexHub Global Flagship</h4>
+              <p class="contact-card-address">500 Howard Street, Suite 400<br>San Francisco, CA 94105</p>
+              <button type="button" class="btn btn-outline btn-small copy-address-btn" id="copyAddressBtn">
+                Copy Hub Address
+              </button>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="booking-form-card">
+            
+            <!-- Accessible Status Notification -->
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+            <form id="tourForm" class="tour-form" novalidate>
+              
+              <!-- Row 1: Name & Email -->
+              <div class="form-row">
+                <div class="form-group" id="groupName">
+                  <label for="fullName" class="form-label">Full Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. Alex Mercer" required autocomplete="name" aria-required="true">
+                  <span class="error-msg" id="errorName" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group" id="groupEmail">
+                  <label for="workEmail" class="form-label">Work Email <span class="required" aria-hidden="true">*</span></label>
+                  <input type="email" id="workEmail" name="workEmail" class="form-input" placeholder="alex@company.com" required autocomplete="email" aria-required="true">
+                  <span class="error-msg" id="errorEmail" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row 2: Phone & Hub Location -->
+              <div class="form-row">
+                <div class="form-group" id="groupPhone">
+                  <label for="phoneNumber" class="form-label">Phone Number <span class="required" aria-hidden="true">*</span></label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="+1 (555) 000-0000" required autocomplete="tel" aria-required="true">
+                  <span class="error-msg" id="errorPhone" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group" id="groupLocation">
+                  <label for="hubLocation" class="form-label">Hub Campus <span class="required" aria-hidden="true">*</span></label>
+                  <select id="hubLocation" name="hubLocation" class="form-select" required aria-required="true">
+                    <option value="" disabled selected>Select preferred location</option>
+                    <option value="SF">San Francisco — Howard St Campus</option>
+                    <option value="BER">Berlin — Kreuzberg Tech District</option>
+                    <option value="BLR">Bengaluru — Indiranagar Innovation Corridor</option>
+                    <option value="ATX">Austin — Downtown Silicon Hills</option>
+                    <option value="SGP">Singapore — Marina Bay Hub</option>
+                  </select>
+                  <span class="error-msg" id="errorLocation" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row 3: Space Tier & Team Size -->
+              <div class="form-row">
+                <div class="form-group" id="groupSpaceType">
+                  <label for="spaceType" class="form-label">Workspace Interest <span class="required" aria-hidden="true">*</span></label>
+                  <select id="spaceType" name="spaceType" class="form-select" required aria-required="true">
+                    <option value="" disabled selected>Select space tier</option>
+                    <option value="Hot Desk">Dynamic Hot Desk ($199/mo)</option>
+                    <option value="Dedicated Desk">Dedicated Workstation ($349/mo)</option>
+                    <option value="Private Studio">Acoustic Private Studio ($899/mo)</option>
+                    <option value="Prototyping Lab">Hardware FabLab Access ($549/mo)</option>
+                  </select>
+                  <span class="error-msg" id="errorSpaceType" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group" id="groupTourDate">
+                  <label for="tourDate" class="form-label">Preferred Date <span class="required" aria-hidden="true">*</span></label>
+                  <input type="date" id="tourDate" name="tourDate" class="form-input" required aria-required="true">
+                  <span class="error-msg" id="errorDate" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row 4: Requirements & Character Counter -->
+              <div class="form-group" id="groupMessage">
+                <div class="label-with-counter">
+                  <label for="specialRequests" class="form-label">Special Requirements or Team Overview</label>
+                  <span class="char-counter" id="charCounter" aria-live="polite">0 / 250</span>
+                </div>
+                <textarea id="specialRequests" name="specialRequests" class="form-textarea" rows="3" maxlength="250" placeholder="Tell us about your team size, hardware requirements, or target move-in timeframe..."></textarea>
+                <span class="error-msg" id="errorMessage" aria-live="polite"></span>
+              </div>
+
+              <!-- Terms agreement -->
+              <div class="form-group checkbox-group" id="groupConsent">
+                <label class="addon-checkbox">
+                  <input type="checkbox" id="consentCheckbox" required aria-required="true">
+                  <span class="checkmark"></span>
+                  <span class="consent-text">I consent to receiving confirmation details and community tour communications from ApexHub.</span>
+                </label>
+                <span class="error-msg" id="errorConsent" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit button with loading state -->
+              <button type="submit" class="btn btn-primary btn-large btn-full ripple-btn" id="submitTourBtn">
+                <span class="btn-text">Confirm Tour Reservation</span>
+                <span class="btn-spinner" aria-hidden="true" style="display: none;"></span>
+              </button>
+
+            </form>
+
+            <!-- Success Confirmation Card (Hidden by default, shown by JS) -->
+            <div class="booking-success-card" id="bookingSuccessCard" style="display: none;" role="alert">
+              <div class="success-icon" aria-hidden="true">✓</div>
+              <h3 class="success-title">Tour Confirmed!</h3>
+              <p class="success-desc">We have reserved your in-person visit. A calendar invitation and day-pass credentials have been sent to your email.</p>
+              
+              <div class="booking-details-box">
+                <div class="detail-row">
+                  <span class="detail-key">Reservation Ref:</span>
+                  <span class="detail-val" id="resRefNumber">APX-9824</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-key">Attendee:</span>
+                  <span class="detail-val" id="resAttendeeName">Alex Mercer</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-key">Campus:</span>
+                  <span class="detail-val" id="resCampusLocation">San Francisco</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-key">Space Interest:</span>
+                  <span class="detail-val" id="resSpaceInterest">Dedicated Workstation</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-key">Scheduled Date:</span>
+                  <span class="detail-val" id="resTourDate">October 28, 2026</span>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-secondary btn-full" id="bookAnotherBtn">
+                Book Another Tour
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="container footer-container">
+      
+      <!-- Column 1: Brand & Bio -->
+      <div class="footer-col footer-brand">
+        <a href="#top" class="brand-logo footer-logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#2563eb"/>
+              <path d="M16 6L24 22H20L16 13.5L12 22H8L16 6Z" fill="#ffffff"/>
+              <circle cx="16" cy="24" r="2.5" fill="#38bdf8"/>
+            </svg>
+          </span>
+          <span class="brand-name">Apex<span class="brand-accent">Hub</span></span>
+        </a>
+        <p class="footer-bio">Empowering the world's most ambitious tech founders, climate creators, and software architects with sustainable, high-velocity infrastructure.</p>
+        <div class="footer-badges">
+          <span class="micro-badge">☀️ 100% Solar</span>
+          <span class="micro-badge">🔒 SOC-2 Type II</span>
+          <span class="micro-badge">⚡ 10G Fiber</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Environments -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Environments</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#spaces" class="footer-link">Dynamic Hot Desks</a></li>
+          <li><a href="#spaces" class="footer-link">Dedicated Workstations</a></li>
+          <li><a href="#spaces" class="footer-link">Acoustic Private Studios</a></li>
+          <li><a href="#spaces" class="footer-link">Hardware FabLab</a></li>
+          <li><a href="#calculator" class="footer-link">Team Price Calculator</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Hub Locations -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Global Hubs</h4>
+        <ul class="footer-links" role="list">
+          <li><span class="hub-city">San Francisco</span> <span class="hub-street">Howard St</span></li>
+          <li><span class="hub-city">Berlin</span> <span class="hub-street">Kreuzberg</span></li>
+          <li><span class="hub-city">Bengaluru</span> <span class="hub-street">Indiranagar</span></li>
+          <li><span class="hub-city">Austin</span> <span class="hub-street">Silicon Hills</span></li>
+          <li><span class="hub-city">Singapore</span> <span class="hub-street">Marina Bay</span></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Newsletter & Interactive Feature -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Founder Dispatch</h4>
+        <p class="footer-text">Monthly deep-dives on hardware scaling, distributed systems, and climate technology.</p>
+        <form class="footer-newsletter" id="newsletterForm" novalidate>
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="developer@company.com" required aria-label="Enter your email address">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to founder newsletter">&rarr;</button>
+          </div>
+          <span class="newsletter-status" id="newsletterStatus" role="status" aria-live="polite"></span>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">&copy; 2026 ApexHub Innovation Spaces Inc. All rights reserved.</p>
+        <p class="footer-credits">YUVA Intern — Week 3 Interactive Frontend Assignment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Scroll back to top of page" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" role="region" aria-label="Notifications" aria-live="polite"></div>
+
+  <!-- JavaScript Application Entrypoint -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>

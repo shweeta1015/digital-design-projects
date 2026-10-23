@@ -1,0 +1,91 @@
+{
+  "project": "ApexHub Innovation Space \u2014 Week 3 JavaScript Interactive User Experience",
+  "timestamp": "2026-10-23T11:37:39",
+  "tested_url": "file:///C:/Users/Shweta/Desktop/anti_gravity_workspace/YUVAA/task-03/index.html",
+  "viewports_tested": [
+    {
+      "viewport_name": "Small Mobile (iPhone SE)",
+      "width": 320,
+      "height": 568,
+      "scroll_width": 320,
+      "client_width": 320,
+      "overflow_px": 0,
+      "console_errors": [],
+      "status": "PASS"
+    },
+    {
+      "viewport_name": "Standard Mobile (iPhone 13)",
+      "width": 375,
+      "height": 812,
+      "scroll_width": 375,
+      "client_width": 375,
+      "overflow_px": 0,
+      "console_errors": [],
+      "status": "PASS"
+    },
+    {
+      "viewport_name": "Tablet Portrait (iPad)",
+      "width": 768,
+      "height": 1024,
+      "scroll_width": 768,
+      "client_width": 768,
+      "overflow_px": 0,
+      "console_errors": [],
+      "status": "PASS"
+    },
+    {
+      "viewport_name": "Desktop HD (1440p)",
+      "width": 1440,
+      "height": 900,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "overflow_px": 0,
+      "console_errors": [],
+      "status": "PASS"
+    }
+  ],
+  "interactive_tests": {
+    "theme_toggle": {
+      "initial_theme": "light",
+      "after_toggle": "dark",
+      "status": "PASS"
+    },
+    "spaces_filter": {
+      "studio_visible": true,
+      "hotdesk_hidden": true,
+      "status": "PASS"
+    },
+    "pricing_calculator": {
+      "tier_name": "Dedicated Desk ($349/mo)",
+      "team_count": "5 \u00d7 Members",
+      "total_amount": "1,460",
+      "discount_visible": true,
+      "status": "PASS"
+    },
+    "faq_accordion": {
+      "first_item_expanded": true,
+      "content_visible": true,
+      "status": "PASS"
+    },
+    "form_validation_errors": {
+      "errors_rendered_on_empty": true,
+      "status": "PASS"
+    },
+    "form_submission_success": {
+      "success_card_visible": true,
+      "reservation_ref": "APX-6262",
+      "status": "PASS"
+    },
+    "mobile_nav_drawer": {
+      "drawer_opened": true,
+      "status": "PASS"
+    }
+  },
+  "asset_integrity": {
+    "total_images": 8,
+    "all_loaded": true,
+    "all_alt_present": true,
+    "status": "PASS"
+  },
+  "console_errors": []
+}

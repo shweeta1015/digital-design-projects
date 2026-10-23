@@ -29,5 +29,6 @@ task-01-static-webpage/report.html
 task-01-static-webpage/test_results_detailed.json
 task-2/*.py
 task-2/report.html
+task-03/*.py
 
 

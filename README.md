@@ -34,40 +34,44 @@ digital-design-projects/
 │       ├── fullpage_375w.png
 │       └── test_summary.json
 │
-└── task-2/                            # Week 2: Implementation of Responsive Web Design
-    ├── index.html                     # Semantic HTML5 webpage (Aura Digital Studio)
-    ├── style.css                      # Production CSS3 stylesheet (50 tokens, fluid clamp())
-    ├── script.js                      # Vanilla JS (ARIA mobile drawer, real-time form validation)
-    ├── report.md                      # Comprehensive technical implementation report (Markdown)
-    ├── report.pdf                     # Compiled publication-grade PDF report
-    ├── report.docx                    # Formatted Microsoft Word submission report
-    ├── test_summary.json              # Machine-readable automated test execution metrics
-    ├── assets/                        # 14 custom vector SVG illustrations & UI graphics
-    │   ├── hero-agency-illustration.svg
-    │   ├── project-novapay.svg
-    │   ├── project-kroma.svg
-    │   ├── project-solaria.svg
-    │   ├── project-aetheria.svg
-    │   ├── service-brand.svg
-    │   ├── service-product.svg
-    │   ├── service-web.svg
-    │   ├── service-cloud.svg
-    │   ├── service-systems.svg
-    │   ├── service-motion.svg
-    │   ├── avatar-elena.svg
-    │   ├── avatar-marcus.svg
-    │   └── avatar-priya.svg
-    └── test_previews/                 # Headless Chrome multi-viewport test captures
-        ├── mobile_320x568.png
-        ├── mobile_375x812.png
-        ├── tablet_768x1024.png
-        ├── laptop_1024x768.png
-        ├── desktop_1440x900.png
-        ├── fullpage_1440w.png
-        ├── fullpage_1024w.png
-        ├── fullpage_768w.png
-        ├── fullpage_375w.png
-        └── fullpage_320w.png
+├── task-2/                            # Week 2: Implementation of Responsive Web Design
+│   ├── index.html                     # Semantic HTML5 webpage (Aura Digital Studio)
+│   ├── style.css                      # Production CSS3 stylesheet (50 tokens, fluid clamp())
+│   ├── script.js                      # Vanilla JS (ARIA mobile drawer, real-time form validation)
+│   ├── report.md                      # Comprehensive technical implementation report (Markdown)
+│   ├── report.pdf                     # Compiled publication-grade PDF report
+│   ├── report.docx                    # Formatted Microsoft Word submission report
+│   ├── test_summary.json              # Machine-readable automated test execution metrics
+│   ├── assets/                        # 14 custom vector SVG illustrations & UI graphics
+│   │   ├── hero-agency-illustration.svg
+│   │   ├── project-novapay.svg
+│   │   ├── project-kroma.svg
+│   │   ├── project-solaria.svg
+│   │   ├── project-aetheria.svg
+│   │   ├── service-brand.svg
+│   │   ├── service-product.svg
+│   │   ├── service-web.svg
+│   │   ├── service-cloud.svg
+│   │   ├── service-systems.svg
+│   │   ├── service-motion.svg
+│   │   ├── avatar-elena.svg
+│   │   ├── avatar-marcus.svg
+│   │   └── avatar-priya.svg
+│   └── test_previews/                 # Headless Chrome multi-viewport test captures
+│
+└── task-03/                           # Week 3: JavaScript Interactive User Experience
+    ├── index.html                     # Semantic HTML5 dynamic web app (ApexHub Innovation Space)
+    ├── css/
+    │   └── style.css                  # 1,960 lines of responsive CSS, light/dark themes
+    ├── js/
+    │   └── script.js                  # 826 lines of pure Vanilla JS (Theme, Calc, Accordion, Validation)
+    ├── assets/                        # 7 custom vector SVG illustrations & avatars
+    ├── report/
+    │   ├── Week_3_Technical_Report.docx      # 14-section formal Microsoft Word Technical Report
+    │   └── Week_3_Submission_Description.txt # 295-word submission portal description
+    ├── test_previews/                 # 14 automated Playwright viewport screenshots
+    ├── test_summary.json              # Playwright automated test metrics (0px overflow)
+    └── README.md                      # Task 03 technical documentation
 ```
 
 ---
@@ -103,24 +107,41 @@ digital-design-projects/
 
 ---
 
+### Task 03: JavaScript Interactive User Experience — ApexHub Innovation Space
+- **Directory:** [`task-03/`](task-03/)
+- **Concept:** ApexHub Innovation Space — Dynamic, accessible web application for a tech coworking and rapid prototyping campus.
+- **Tech Stack:** Semantic HTML5, CSS3 (Light/Dark mode tokens, CSS Grid, Flexbox), Vanilla JavaScript (ES6+), WAI-ARIA authoring practices, Playwright test engine.
+- **Key Interactive Features:**
+  - **Appearance Switcher:** Light/Dark theme toggle with `localStorage` preference persistence.
+  - **Dynamic Mobile Navigation:** Off-canvas drawer with focus trapping and active Scrollspy section tracking.
+  - **Interactive Space Filtering:** Category filtering (*Hot Desks*, *Dedicated Desks*, *Private Studios*) via `data-category` attributes.
+  - **Live Pricing Engine:** Multi-variable plan calculation with member slider (1–30), 20% annual discount toggle, and `requestAnimationFrame` animated totals.
+  - **Accessible FAQ Accordion:** W3C WAI-ARIA compliant accordion with keyboard navigation (`Enter`, `Space`, `ArrowUp`, `ArrowDown`).
+  - **Client-Side Form Validation:** Real-time regex validation, live error alerts, character counters, and dynamic reservation ticket generator (`APX-XXXX`).
+  - **Zero Mobile Overflow:** Verified 0px horizontal overflow across all 4 viewports (320px, 375px, 768px, 1440px).
+
+---
+
 ## How to Run & View Locally
 
 ### Option 1: Direct File Launch in Browser
-Open either project's entrypoint directly in any modern web browser (Google Chrome, Microsoft Edge, Firefox, or Safari):
+Open any project's entrypoint directly in any modern web browser:
 - **Week 1:** Open `task-01-static-webpage/index.html`
 - **Week 2:** Open `task-2/index.html`
+- **Week 3:** Open `task-03/index.html`
 
 ### Option 2: Local HTTP Server (Python)
 From the repository root, start a lightweight web server:
 
 ```bash
 # To run Week 1:
-cd task-01-static-webpage
-python -m http.server 3000
+cd task-01-static-webpage && python -m http.server 3000
 
 # To run Week 2:
-cd task-2
-python -m http.server 3000
+cd task-2 && python -m http.server 3000
+
+# To run Week 3:
+cd task-03 && python -m http.server 3000
 ```
 
 Open `http://localhost:3000` in your web browser.
@@ -143,6 +164,16 @@ Open `http://localhost:3000` in your web browser.
 - [**Technical Report (PDF)**](task-2/report.pdf): Formatted publication-ready PDF document.
 - [**Technical Report (Word Document)**](task-2/report.docx): Formatted Microsoft Word document with embedded cross-device screenshots.
 - [**Automated Test Summary**](task-2/test_summary.json): Machine-readable verification log from Playwright automated runs.
+
+### Week 3 Deliverables (`task-03/`)
+- [**Webpage Entrypoint**](task-03/index.html): Semantic HTML5 dynamic interactive web application.
+- [**Stylesheet**](task-03/css/style.css): Production CSS3 stylesheet with light/dark theme custom properties and fluid layouts.
+- [**Client Script**](task-03/js/script.js): Pure Vanilla JavaScript (Theme toggle, live calculator, accordion, validation).
+- [**Technical README**](task-03/README.md): Full technical documentation and verification matrix.
+- [**Technical Report (Word Document)**](task-03/report/Week_3_Technical_Report.docx): Formal 14-section Microsoft Word report with embedded screenshots.
+- [**Submission Description**](task-03/report/Week_3_Submission_Description.txt): 295-word portal submission description text.
+- [**Automated Test Summary**](task-03/test_summary.json): Playwright automated test metrics verifying 0px overflow and 100% asset loading.
+- [**Test Previews**](task-03/test_previews/): 14 cross-device screenshots and interactive state captures.
 
 ---
 
