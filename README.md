@@ -77,6 +77,7 @@ digital-design-projects/
     ├── index.html                     # Optimized semantic HTML5 webpage (ApexHub)
     ├── style.css                      # Modular CSS3 stylesheet (1,159 lines, zero-overflow grid)
     ├── report.md                      # Comprehensive 13-section technical report with Lighthouse audits
+    ├── report.docx                    # Formatted Microsoft Word Technical Report
     ├── README.md                      # Technical documentation & reproduction steps
     └── assets/                        # 7 scalable vector graphics (SVGs) with explicit dimensions
 ```
@@ -205,6 +206,7 @@ Open `http://localhost:3000` in your web browser.
 - [**Webpage Entrypoint**](task-04-performance-accessibility/index.html): Highly-optimized semantic HTML5 web page with WCAG 2.2 Level AA accessibility.
 - [**Stylesheet**](task-04-performance-accessibility/style.css): Production CSS3 stylesheet (1,159 lines, modern color palette `#2563eb`, `#4f46e5`, `#7c3aed`, system typography, `:focus-visible`).
 - [**Technical Report (Markdown)**](task-04-performance-accessibility/report.md): 13-section technical report with before/after empirical Lighthouse audit tables, Core Web Vitals breakdown, and WCAG criteria compliance.
+- [**Technical Report (Word Document)**](task-04-performance-accessibility/report.docx): Formatted Microsoft Word report with executive summary, metadata, WCAG matrix, and empirical audit data.
 - [**Technical README**](task-04-performance-accessibility/README.md): Full technical documentation, architectural breakdown, reproduction steps, and audit instructions.
 - [**Optimized Vector Assets**](task-04-performance-accessibility/assets/): 7 scalable vector graphics (SVGs) with explicit aspect ratios and dimension attributes.
 
