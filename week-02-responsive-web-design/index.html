@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aura Studio is an award-winning digital agency engineering responsive web platforms, bespoke product designs, and resilient brand identities for ambitious companies.">
+  <meta name="author" content="YUVA Intern — Frontend Developer Intern">
+  <meta name="theme-color" content="#7c3aed">
+  <title>Aura Digital Studio | Responsive Web Design &amp; Digital Product Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header & Navigation Landmark -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <a href="#top" class="brand-logo" aria-label="Aura Digital Studio Home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#brandGrad)"/>
+            <path d="M16 6L25 22H20.5L16 13.5L11.5 22H7L16 6Z" fill="#ffffff"/>
+            <circle cx="16" cy="24" r="2.5" fill="#38bdf8"/>
+            <defs>
+              <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#2563eb"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name">Aura<span class="brand-accent">Studio</span></span>
+      </a>
+
+      <!-- Accessible Mobile Navigation Toggle Button -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+      </button>
+
+      <!-- Primary Navigation Menu -->
+      <nav class="site-nav" id="primary-navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link">Selected Work</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Studio</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Client Stories</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#contact" class="btn btn-primary nav-cta">Start a Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Landmark Content -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span class="badge-text">Next-Generation Digital Experience Studio</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Designing Bespoke Digital Products That <span class="text-gradient">Propel Ambitious Brands</span>
+          </h1>
+
+          <p class="hero-description">
+            We unite human-centric product design, high-performance responsive engineering, and strategic brand identity to scale market-leading digital platforms.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary btn-large">Explore Selected Work</a>
+            <a href="#contact" class="btn btn-secondary btn-large">Schedule a Consultation</a>
+          </div>
+
+          <!-- Hero Metrics & Trust Indicators -->
+          <div class="hero-stats-card">
+            <div class="stat-item">
+              <span class="stat-number">120+</span>
+              <span class="stat-label">Shipped Platforms</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">98.4%</span>
+              <span class="stat-label">Client Retention</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">14</span>
+              <span class="stat-label">Design Honors</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Media Column -->
+        <div class="hero-visual">
+          <figure class="hero-figure">
+            <img src="assets/hero-agency-illustration.svg" alt="Isometric digital agency workspace illustration showing responsive UI prototypes and interactive analytics" width="640" height="480" class="hero-image">
+            <figcaption class="visually-hidden">Aura Studio responsive web engineering and product interface preview.</figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Core Capabilities</span>
+          <h2 id="services-title" class="section-title">End-to-End Capabilities for the Modern Web</h2>
+          <p class="section-subtitle">
+            From initial discovery and rapid wireframing to production-grade responsive engineering, we craft digital platforms built for long-term scalability.
+          </p>
+        </header>
+
+        <!-- CSS Grid Services Cards -->
+        <div class="services-grid">
+          
+          <!-- Card 1 -->
+          <article class="service-card">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <img src="assets/service-product.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="service-title">UI/UX &amp; Product Design</h3>
+            <p class="service-text">
+              Transforming complex workflows into intuitive, elegant user interfaces. We conduct deep user research, design wireframes, and build interactive design prototypes.
+            </p>
+            <ul class="service-tags" aria-label="Product design capabilities">
+              <li>Wireframing</li>
+              <li>Design Systems</li>
+              <li>User Testing</li>
+            </ul>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <img src="assets/service-web.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="service-title">Responsive Web Engineering</h3>
+            <p class="service-text">
+              Crafting lightweight, semantic, and fluid websites that load in milliseconds across all devices. Built with modern HTML5, clean CSS Grid/Flexbox, and accessible markup.
+            </p>
+            <ul class="service-tags" aria-label="Web engineering capabilities">
+              <li>Fluid Layouts</li>
+              <li>Semantic HTML5</li>
+              <li>WCAG 2.1 AA</li>
+            </ul>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <img src="assets/service-brand.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="service-title">Brand Strategy &amp; Identity</h3>
+            <p class="service-text">
+              Defining distinctive visual languages that resonate with your audience. We craft complete identity guidelines, logo marks, typography pairings, and digital design tokens.
+            </p>
+            <ul class="service-tags" aria-label="Branding capabilities">
+              <li>Visual Identity</li>
+              <li>Design Tokens</li>
+              <li>Brand Guidelines</li>
+            </ul>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <img src="assets/service-cloud.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="service-title">Cloud Platforms &amp; Portals</h3>
+            <p class="service-text">
+              Engineering enterprise portals, customer dashboards, and high-conversion e-commerce experiences with resilient architecture and secure API connectivity.
+            </p>
+            <ul class="service-tags" aria-label="Platform capabilities">
+              <li>Web Portals</li>
+              <li>SaaS Interfaces</li>
+              <li>API Integration</li>
+            </ul>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <img src="assets/service-systems.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="service-title">Scalable Component Systems</h3>
+            <p class="service-text">
+              Establishing unified design system libraries and token frameworks that accelerate product delivery and maintain 100% brand consistency across platforms.
+            </p>
+            <ul class="service-tags" aria-label="System capabilities">
+              <li>Figma Tokens</li>
+              <li>CSS Architecture</li>
+              <li>UI Governance</li>
+            </ul>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <img src="assets/service-motion.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="service-title">Interactive Motion &amp; 3D</h3>
+            <p class="service-text">
+              Enhancing user engagement with subtle micro-interactions, responsive vector animations, and WebGL graphics that respect user motion preferences.
+            </p>
+            <ul class="service-tags" aria-label="Motion capabilities">
+              <li>Micro-Interactions</li>
+              <li>SVG Animation</li>
+              <li>Reduced Motion</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK / PORTFOLIO SECTION -->
+    <section class="portfolio-section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Case Studies</span>
+          <h2 id="work-title" class="section-title">Selected Work &amp; Measurable Outcomes</h2>
+          <p class="section-subtitle">
+            A showcase of responsive platforms and digital products engineered to solve complex problems and deliver measurable business growth.
+          </p>
+        </header>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="portfolio-grid">
+          
+          <!-- Project 1: NovaPay -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/project-novapay.svg" alt="NovaPay global fintech dashboard interface showing transaction ledger and platinum credit card preview" width="600" height="380" class="project-image">
+              <span class="project-badge badge-lavender">Fintech &amp; Banking</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">NovaPay — Next-Gen Cross-Border Financial Dashboard</h3>
+              <p class="project-summary">
+                Complete redesign and responsive architecture for an enterprise fintech platform handling over $80M in monthly cross-border transactions.
+              </p>
+              <div class="project-metric">
+                <span class="metric-highlight">+148%</span>
+                <span class="metric-desc">Mobile conversion rate increase following responsive rebuild</span>
+              </div>
+              <ul class="tech-pills" aria-label="Technologies used in NovaPay">
+                <li>Responsive CSS Grid</li>
+                <li>Design System</li>
+                <li>Accessible Forms</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2: Kroma Health -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/project-kroma.svg" alt="Kroma Health telehealth patient portal showing live vital diagnostics and heart rhythm monitoring" width="600" height="380" class="project-image">
+              <span class="project-badge badge-blue">Healthcare &amp; Telehealth</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Kroma Health — AI-Powered Patient Telehealth Ecosystem</h3>
+              <p class="project-summary">
+                A HIPAA-compliant responsive patient diagnostic portal offering real-time vital telemetry, appointment scheduling, and remote clinician consultations.
+              </p>
+              <div class="project-metric">
+                <span class="metric-highlight">68ms</span>
+                <span class="metric-desc">Sub-second telemetry sync speed on 4G cellular connections</span>
+              </div>
+              <ul class="tech-pills" aria-label="Technologies used in Kroma Health">
+                <li>Fluid Typography</li>
+                <li>WCAG 2.1 AAA</li>
+                <li>Modular CSS</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3: Solaria Green -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/project-solaria.svg" alt="Solaria Green IoT telemetry dashboard showing solar array grid analytics and carbon offset indicators" width="600" height="380" class="project-image">
+              <span class="project-badge badge-lavender">CleanTech &amp; IoT</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Solaria Green — Enterprise Solar Array Analytics Platform</h3>
+              <p class="project-summary">
+                High-density IoT telemetry dashboard visualizing power production from 1,240 MW distributed renewable facilities across North America.
+              </p>
+              <div class="project-metric">
+                <span class="metric-highlight">+22%</span>
+                <span class="metric-desc">Efficiency gain in solar field maintenance dispatch</span>
+              </div>
+              <ul class="tech-pills" aria-label="Technologies used in Solaria Green">
+                <li>Data Visualization</li>
+                <li>CSS Flexbox</li>
+                <li>Responsive Tables</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 4: Aetheria -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/project-aetheria.svg" alt="Aetheria spatial AR commerce platform showing interactive 3D titanium frame preview" width="600" height="380" class="project-image">
+              <span class="project-badge badge-blue">Spatial Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aetheria — Luxury Spatial Computing &amp; AR Storefront</h3>
+              <p class="project-summary">
+                An experiential 3D product configurator and mobile-first e-commerce web platform for luxury titanium optical accessories.
+              </p>
+              <div class="project-metric">
+                <span class="metric-highlight">+218%</span>
+                <span class="metric-desc">Average session duration growth across tablet and mobile devices</span>
+              </div>
+              <ul class="tech-pills" aria-label="Technologies used in Aetheria">
+                <li>WebGL Preview</li>
+                <li>CSS Custom Properties</li>
+                <li>Touch Gestures</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <!-- About Narrative Left Column -->
+          <div class="about-content">
+            <span class="section-tag">About Aura Studio</span>
+            <h2 id="about-title" class="about-headline">
+              We Bridge Visionary Strategy and <span class="text-gradient">Flawless Technical Execution</span>
+            </h2>
+            <p class="about-lead">
+              Founded in 2021 by a collective of designers and systems architects, Aura Studio builds digital experiences that combine aesthetic grace with uncompromising web performance.
+            </p>
+            <p class="about-text">
+              We believe that great digital design is inherently responsive, inclusive, and durable. We refuse to rely on bloated front-end frameworks when clean, semantic HTML5 and modern CSS can deliver faster, more accessible, and more resilient user experiences.
+            </p>
+
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">💎</div>
+                <div>
+                  <h3 class="value-title">Craft Without Compromise</h3>
+                  <p class="value-desc">Every pixel, typography scale, and micro-interaction is refined through rigorous peer code review.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">⚡</div>
+                <div>
+                  <h3 class="value-title">Performance by Default</h3>
+                  <p class="value-desc">Zero runtime dependencies and optimized vector graphics ensure lightning-fast page loads.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">🌐</div>
+                <div>
+                  <h3 class="value-title">Accessibility for Everyone</h3>
+                  <p class="value-desc">Strict compliance with WCAG 2.1 Level AA standards ensures universal usability across all devices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Pillars Right Column -->
+          <div class="about-highlights">
+            <div class="highlights-card">
+              <h3 class="highlights-title">Why Industry Leaders Partner with Us</h3>
+              
+              <ul class="highlights-list">
+                <li>
+                  <span class="highlight-check" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>Senior-Only Engineering Squads</strong>
+                    <p>No junior handoffs. Every project is led by experienced senior designers and frontend specialists.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="highlight-check" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>100% On-Time Delivery Guarantee</strong>
+                    <p>Milestone-driven agile execution with transparent weekly demos and real device testing.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="highlight-check" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>Long-Term Design System Scalability</strong>
+                    <p>All projects ship with modular design tokens and documented component guidelines.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="highlight-check" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>Rigorous Cross-Device QA Audits</strong>
+                    <p>Verified across real smartphones, tablets, laptops, and 4K desktop screens before launch.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="highlights-cta">
+                <a href="#contact" class="btn btn-primary btn-block">Schedule a Discovery Call</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Client Endorsements</span>
+          <h2 id="testimonials-title" class="section-title">Trusted by Visionary Founders &amp; Engineering Teams</h2>
+          <p class="section-subtitle">
+            Hear how our responsive design architecture helped scaling companies elevate their digital presence.
+          </p>
+        </header>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-rating" role="img" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <h3 class="testimonial-headline">Transformed Our Enterprise Mobile Reach</h3>
+            <blockquote class="testimonial-quote">
+              "Aura redesigned our flagship NovaPay platform from the ground up. Their mobile-first CSS architecture dropped our page load times under 700ms and increased mobile conversion by 148%. A world-class agency."
+            </blockquote>
+            <footer class="testimonial-author">
+              <img src="assets/avatar-elena.svg" alt="Portrait photo of Elena Vance" width="48" height="48" class="author-avatar">
+              <div class="author-meta">
+                <cite class="author-name">Elena Vance</cite>
+                <span class="author-title">VP of Product, NovaPay</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-rating" role="img" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <h3 class="testimonial-headline">Flawless Accessibility &amp; Pixel Perfection</h3>
+            <blockquote class="testimonial-quote">
+              "In clinical healthcare, digital accessibility isn't optional. Aura engineered Kroma Health with full WCAG 2.1 AA compliance, fluid typography, and zero layout shift. Our patients and medical staff love it."
+            </blockquote>
+            <footer class="testimonial-author">
+              <img src="assets/avatar-marcus.svg" alt="Portrait photo of Marcus Thorne" width="48" height="48" class="author-avatar">
+              <div class="author-meta">
+                <cite class="author-name">Dr. Marcus Thorne</cite>
+                <span class="author-title">Chief Medical Officer, Kroma Health</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-rating" role="img" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <h3 class="testimonial-headline">Bespoke Design with Engineering Rigor</h3>
+            <blockquote class="testimonial-quote">
+              "The custom vector visuals and modular CSS tokens Aura established gave Solaria Green an unmistakable market presence. They delivered ahead of schedule and the codebase was a joy for our team to maintain."
+            </blockquote>
+            <footer class="testimonial-author">
+              <img src="assets/avatar-priya.svg" alt="Portrait photo of Priya Sharma" width="48" height="48" class="author-avatar">
+              <div class="author-meta">
+                <cite class="author-name">Priya Sharma</cite>
+                <span class="author-title">Head of Technology, Solaria Green</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION WITH CLIENT-SIDE VALIDATION -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        
+        <div class="contact-wrapper">
+          
+          <!-- Contact Narrative Left Column -->
+          <div class="contact-info">
+            <span class="section-tag">Initiate Collaboration</span>
+            <h2 id="contact-title" class="contact-title">Let's Build Something Exceptional Together</h2>
+            <p class="contact-text">
+              Have an upcoming product launch, responsive redesign, or need a scalable design system? Fill out the brief and our leadership team will respond within 24 hours.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <h3 class="channel-label">Direct Inquiries</h3>
+                  <a href="mailto:hello@aurastudio.agency" class="channel-link">hello@aurastudio.agency</a>
+                </div>
+              </div>
+              <div class="channel-item">
+                <div class="channel-icon" aria-hidden="true">📍</div>
+                <div>
+                  <h3 class="channel-label">Studio Hubs</h3>
+                  <p class="channel-desc">San Francisco (SOMA) &amp; London (Shoreditch)</p>
+                </div>
+              </div>
+              <div class="channel-item">
+                <div class="channel-icon" aria-hidden="true">⚡</div>
+                <div>
+                  <h3 class="channel-label">Response Commitment</h3>
+                  <p class="channel-desc">Detailed proposals returned within 2 business days.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form Right Column -->
+          <div class="contact-form-card">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="required-star">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Maya Lin" required autocomplete="name">
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Work Email <span class="required-star">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="maya@company.com" required autocomplete="email">
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-service" class="form-label">Desired Service <span class="required-star">*</span></label>
+                  <select id="contact-service" name="service" class="form-select" required>
+                    <option value="" disabled selected>Select capability</option>
+                    <option value="ui-ux">UI/UX &amp; Product Design</option>
+                    <option value="responsive-web">Responsive Web Engineering</option>
+                    <option value="brand-identity">Brand Identity &amp; Systems</option>
+                    <option value="cloud-portal">Enterprise Cloud Portal</option>
+                    <option value="full-rebrand">Complete Digital Transformation</option>
+                  </select>
+                  <span class="field-error" id="service-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-budget" class="form-label">Target Budget <span class="required-star">*</span></label>
+                  <select id="contact-budget" name="budget" class="form-select" required>
+                    <option value="" disabled selected>Select budget range</option>
+                    <option value="15k-30k">$15,000 – $30,000</option>
+                    <option value="30k-60k">$30,000 – $60,000</option>
+                    <option value="60k-120k">$60,000 – $120,000</option>
+                    <option value="120k+">$120,000+</option>
+                  </select>
+                  <span class="field-error" id="budget-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Project Details <span class="required-star">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your objectives, timeline, and key milestones..." required minlength="10"></textarea>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-large" id="contact-submit">
+                Submit Project Brief
+              </button>
+
+              <p class="form-disclaimer">
+                🔒 Privacy guaranteed. We never share client briefs with third parties.
+              </p>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <h2 class="visually-hidden">Aura Studio Footer Directory &amp; Navigation</h2>
+    
+    <div class="container footer-container">
+      
+      <!-- Brand Column -->
+      <div class="footer-col footer-brand-col">
+        <a href="#top" class="brand-logo footer-logo" aria-label="Aura Digital Studio Home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="url(#brandGradFooter)"/>
+              <path d="M16 6L25 22H20.5L16 13.5L11.5 22H7L16 6Z" fill="#ffffff"/>
+              <circle cx="16" cy="24" r="2.5" fill="#38bdf8"/>
+              <defs>
+                <linearGradient id="brandGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#7c3aed"/>
+                  <stop offset="100%" stop-color="#2563eb"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand-name">Aura<span class="brand-accent">Studio</span></span>
+        </a>
+        <p class="footer-tagline">
+          An independent digital product and responsive engineering studio crafting timeless digital experiences.
+        </p>
+        <div class="social-links" role="group" aria-label="Aura Studio Social Profiles">
+          <a href="https://github.com" class="social-link" aria-label="Aura Studio on GitHub" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" class="social-link" aria-label="Aura Studio on Twitter / X" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" class="social-link" aria-label="Aura Studio on LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="https://dribbble.com" class="social-link" aria-label="Aura Studio on Dribbble" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm9.845 10.963a10.02 10.02 0 00-4.084-.877c-.368 0-.73.023-1.085.068a21.467 21.467 0 00-2.583-5.592c3.42 1.258 5.992 3.86 7.752 6.401zM12 2.155c.498 0 .984.043 1.458.125A19.467 19.467 0 0116.03 7.8c-2.85-.36-5.84.14-8.73 1.488C9.07 5.253 10.43 2.155 12 2.155zm-6.52 3.65c2.72-1.28 5.52-1.76 8.2-.42-1.63 2.47-3.77 4.54-6.38 6.13-1.02-1.89-1.61-3.92-1.82-5.71zm-3.325 6.195c.21 1.67.75 3.55 1.68 5.34-3.26-1.58-4.47-4.45-4.47-5.34 0-.3.04-.59.1-.88 1.05.35 1.9.61 2.69.88zm3.625 7.42c1.78.96 3.84 1.42 6.22 1.42 1.43 0 2.78-.2 4.02-.57-1.42-2.31-3.23-4.18-5.35-5.54-1.92 1.76-3.71 3.51-4.89 4.69zm7.39-2.07c1.92 1.22 3.56 2.89 4.84 4.96A9.973 9.973 0 0112 21.845c-2.14 0-4.01-.41-5.63-1.26 1.1-1.12 2.76-2.77 4.59-4.42 1.5.89 3.09 1.62 4.79 2.18z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#services">Our Capabilities</a></li>
+          <li><a href="#work">Case Studies</a></li>
+          <li><a href="#about">About the Studio</a></li>
+          <li><a href="#testimonials">Client Endorsements</a></li>
+          <li><a href="#contact">Contact &amp; Inquiries</a></li>
+        </ul>
+      </div>
+
+      <!-- Services Column -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Capabilities</h3>
+        <ul class="footer-links">
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">Responsive Web</a></li>
+          <li><a href="#services">Brand Identity</a></li>
+          <li><a href="#services">Enterprise Portals</a></li>
+          <li><a href="#services">Design Systems</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Column -->
+      <div class="footer-col footer-newsletter-col">
+        <h3 class="footer-heading">Studio Dispatch</h3>
+        <p class="newsletter-desc">Subscribe to our monthly journal on digital design, responsive engineering, and frontend craft.</p>
+        <form action="#top" method="get" class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Email address for studio dispatch</label>
+          <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Your work email" class="newsletter-input" required autocomplete="email">
+          <button type="submit" class="btn btn-primary btn-newsletter">Subscribe</button>
+        </form>
+        <p class="newsletter-note">Zero spam. Curated insights only.</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Legal Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 Aura Digital Studio Inc. Built for YUVA Intern Week 2 Assignment.
+        </p>
+        <ul class="legal-links">
+          <li><a href="#hero">Privacy Policy</a></li>
+          <li><a href="#hero">Terms of Service</a></li>
+          <li><a href="#hero">WCAG 2.1 AA Statement</a></li>
+          <li><a href="#hero">Cookie Preferences</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

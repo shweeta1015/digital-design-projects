@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="prismGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="aeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#3b82f6" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#aeBg)"/>
+  <g filter="url(#aeShadow)">
+    <rect x="50" y="40" width="500" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="80" y="65" width="120" height="14" rx="4" fill="#2563eb"/>
+    <circle cx="510" cy="72" r="10" fill="#8b5cf6"/>
+
+    <!-- 3D Spatial Canvas Display -->
+    <rect x="80" y="100" width="280" height="215" rx="12" fill="#faf5ff" stroke="#ede9fe" stroke-width="1"/>
+    <!-- Floating 3D Geometric Prism -->
+    <polygon points="220,135 290,175 220,215 150,175" fill="url(#prismGrad)" opacity="0.9"/>
+    <polygon points="150,175 220,215 220,275 150,235" fill="#7c3aed" opacity="0.8"/>
+    <polygon points="290,175 220,215 220,275 290,235" fill="#2563eb" opacity="0.85"/>
+    <circle cx="220" cy="120" r="4" fill="#8b5cf6"/>
+    <circle cx="135" cy="180" r="4" fill="#3b82f6"/>
+    <circle cx="305" cy="180" r="4" fill="#06b6d4"/>
+    <text x="105" y="295" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#7c3aed">Spatial 60 FPS WebGL Engine</text>
+
+    <!-- Right Configurator Cards -->
+    <rect x="375" y="100" width="145" height="60" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="390" y="122" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Frame Material</text>
+    <text x="390" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0f172a">Aero Titanium</text>
+
+    <rect x="375" y="170" width="145" height="60" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="390" y="192" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">AR Conversion</text>
+    <text x="390" y="214" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">+218%</text>
+
+    <rect x="375" y="245" width="145" height="70" rx="8" fill="url(#prismGrad)"/>
+    <text x="447" y="285" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Launch AR Studio</text>
+  </g>
+</svg>

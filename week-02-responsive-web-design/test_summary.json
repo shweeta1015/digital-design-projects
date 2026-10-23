@@ -1,0 +1,141 @@
+{
+  "project": "Aura Digital Studio \u2014 Week 2 Responsive Web Design",
+  "timestamp": "2026-10-23T10:11:34",
+  "tested_url": "file:///C:/Users/Shweta/Desktop/anti_gravity_workspace/week-02-responsive-web-design/index.html",
+  "w3c_validation": {
+    "status": "PASS",
+    "errors": 0,
+    "warnings": 0,
+    "info_messages": 0,
+    "standard": "W3C HTML5 / Nu HTML Validator"
+  },
+  "viewports_tested": [
+    {
+      "name": "Small Mobile (iPhone SE 1st Gen)",
+      "width": 320,
+      "height": 568,
+      "scroll_width": 320,
+      "client_width": 320,
+      "overflow_pixels": 0,
+      "has_horizontal_overflow": false,
+      "console_errors_count": 0,
+      "console_errors": [],
+      "failed_requests_count": 0,
+      "load_time_ms": 886.63,
+      "viewport_screenshot": "mobile_320x568.png",
+      "viewport_screenshot_bytes": 61247,
+      "fullpage_screenshot": "fullpage_320w.png",
+      "fullpage_screenshot_bytes": 725534,
+      "status": "PASS"
+    },
+    {
+      "name": "Standard Mobile (iPhone 13/14)",
+      "width": 375,
+      "height": 812,
+      "scroll_width": 375,
+      "client_width": 375,
+      "overflow_pixels": 0,
+      "has_horizontal_overflow": false,
+      "console_errors_count": 0,
+      "console_errors": [],
+      "failed_requests_count": 0,
+      "load_time_ms": 774.88,
+      "viewport_screenshot": "mobile_375x812.png",
+      "viewport_screenshot_bytes": 95142,
+      "fullpage_screenshot": "fullpage_375w.png",
+      "fullpage_screenshot_bytes": 748434,
+      "status": "PASS"
+    },
+    {
+      "name": "Tablet Portrait (iPad 10th Gen)",
+      "width": 768,
+      "height": 1024,
+      "scroll_width": 768,
+      "client_width": 768,
+      "overflow_pixels": 0,
+      "has_horizontal_overflow": false,
+      "console_errors_count": 0,
+      "console_errors": [],
+      "failed_requests_count": 0,
+      "load_time_ms": 788.33,
+      "viewport_screenshot": "tablet_768x1024.png",
+      "viewport_screenshot_bytes": 214412,
+      "fullpage_screenshot": "fullpage_768w.png",
+      "fullpage_screenshot_bytes": 946555,
+      "status": "PASS"
+    },
+    {
+      "name": "Tablet Landscape / Laptop",
+      "width": 1024,
+      "height": 768,
+      "scroll_width": 1024,
+      "client_width": 1024,
+      "overflow_pixels": 0,
+      "has_horizontal_overflow": false,
+      "console_errors_count": 0,
+      "console_errors": [],
+      "failed_requests_count": 0,
+      "load_time_ms": 805.12,
+      "viewport_screenshot": "laptop_1024x768.png",
+      "viewport_screenshot_bytes": 192398,
+      "fullpage_screenshot": "fullpage_1024w.png",
+      "fullpage_screenshot_bytes": 1061997,
+      "status": "PASS"
+    },
+    {
+      "name": "Desktop High-DPI (MacBook / PC)",
+      "width": 1440,
+      "height": 900,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "overflow_pixels": 0,
+      "has_horizontal_overflow": false,
+      "console_errors_count": 0,
+      "console_errors": [],
+      "failed_requests_count": 0,
+      "load_time_ms": 828.82,
+      "viewport_screenshot": "desktop_1440x900.png",
+      "viewport_screenshot_bytes": 335754,
+      "fullpage_screenshot": "fullpage_1440w.png",
+      "fullpage_screenshot_bytes": 1036154,
+      "status": "PASS"
+    }
+  ],
+  "interactive_tests": {
+    "mobile_navigation_drawer": {
+      "initial_expanded": "false",
+      "opened_expanded": "true",
+      "drawer_has_open_class": true,
+      "auto_closes_on_link_click": true,
+      "status": "PASS"
+    },
+    "contact_form_validation": {
+      "empty_submission_shows_errors": true,
+      "valid_submission_shows_success": true,
+      "success_message": "Thank you, Sarah Jenkins! Your project brief has been received. Our leadership team will review and reply within 24 hours.",
+      "status": "PASS"
+    },
+    "skip_navigation_link": {
+      "receives_tab_focus": true,
+      "visually_visible_on_focus": true,
+      "focused_top_px": 16,
+      "status": "PASS"
+    }
+  },
+  "asset_integrity": {
+    "total_images_in_dom": 14,
+    "all_loaded_successfully": true,
+    "all_have_alt_attributes": true,
+    "status": "PASS"
+  },
+  "heading_hierarchy": {
+    "total_headings": 30,
+    "heading_counts": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 23
+    },
+    "skipped_levels_count": 0,
+    "status": "PASS"
+  }
+}

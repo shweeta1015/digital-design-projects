@@ -27,4 +27,6 @@ desktop.ini
 task-01-static-webpage/*.py
 task-01-static-webpage/report.html
 task-01-static-webpage/test_results_detailed.json
+week-02-responsive-web-design/*.py
+
 

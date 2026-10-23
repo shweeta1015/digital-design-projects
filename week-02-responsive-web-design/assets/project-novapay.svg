@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="npBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f3ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="npCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="npShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#7c3aed" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#npBg)"/>
+  <!-- App Container -->
+  <g filter="url(#npShadow)">
+    <rect x="50" y="40" width="500" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <!-- Header -->
+    <rect x="80" y="65" width="90" height="14" rx="4" fill="#7c3aed"/>
+    <circle cx="510" cy="72" r="14" fill="#f1f5f9"/>
+    <!-- Main Visa Card -->
+    <rect x="80" y="105" width="240" height="140" rx="12" fill="url(#npCard)"/>
+    <text x="105" y="140" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#ffffff">NovaPay Platinum</text>
+    <text x="105" y="195" font-family="monospace" font-size="16" fill="#e0e7ff">**** **** **** 8421</text>
+    <text x="105" y="225" font-family="system-ui, sans-serif" font-size="11" fill="#c7d2fe">EXP 09/29</text>
+    <text x="270" y="225" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">VISA</text>
+    <!-- Right Analytics Column -->
+    <rect x="345" y="105" width="175" height="65" rx="10" fill="#f8fafc" stroke="#ede9fe" stroke-width="1"/>
+    <text x="360" y="128" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Total Balance</text>
+    <text x="360" y="152" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">$84,920.50</text>
+    
+    <rect x="345" y="180" width="175" height="65" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="360" y="203" font-family="system-ui, sans-serif" font-size="11" fill="#2563eb">Monthly Velocity</text>
+    <text x="360" y="227" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#1e40af">+34.8% YoY</text>
+
+    <!-- Bottom Action Ribbon -->
+    <rect x="80" y="265" width="440" height="50" rx="8" fill="#f8fafc"/>
+    <circle cx="110" cy="290" r="12" fill="#ede9fe"/>
+    <rect x="135" y="284" width="120" height="6" rx="3" fill="#334155"/>
+    <rect x="135" y="294" width="70" height="5" rx="2.5" fill="#94a3b8"/>
+    <text x="495" y="295" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="end">Completed</text>
+  </g>
+</svg>

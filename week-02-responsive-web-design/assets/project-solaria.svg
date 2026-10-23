@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="soBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="100%" stop-color="#fae8ff"/>
+    </linearGradient>
+    <linearGradient id="soAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="soShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#8b5cf6" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#soBg)"/>
+  <g filter="url(#soShadow)">
+    <rect x="50" y="40" width="500" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="80" y="65" width="130" height="14" rx="4" fill="#8b5cf6"/>
+    <circle cx="510" cy="72" r="10" fill="#3b82f6"/>
+    <!-- Solar Array Grid Map Visual -->
+    <rect x="80" y="100" width="260" height="215" rx="10" fill="#f8fafc" stroke="#ede9fe" stroke-width="1"/>
+    <!-- Isometric Panels -->
+    <polygon points="120,130 180,110 240,130 180,150" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+    <polygon points="190,155 250,135 310,155 250,175" fill="#a78bfa" stroke="#7c3aed" stroke-width="1"/>
+    <polygon points="120,180 180,160 240,180 180,200" fill="#8b5cf6" stroke="#6d28d9" stroke-width="1"/>
+    <polygon points="190,205 250,185 310,205 250,225" fill="#7c3aed" stroke="#5b21b6" stroke-width="1"/>
+    <polygon points="120,230 180,210 240,230 180,250" fill="#6d28d9" stroke="#4c1d95" stroke-width="1"/>
+    <text x="105" y="295" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748b">1,240 MW Solar Field Telemetry</text>
+    
+    <!-- Right Stats Card -->
+    <rect x="355" y="100" width="165" height="100" rx="10" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+    <text x="370" y="125" font-family="system-ui, sans-serif" font-size="11" fill="#7c3aed">Clean Output</text>
+    <text x="370" y="155" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" fill="#0f172a">94.8 <tspan font-size="12">GWh</tspan></text>
+    <rect x="370" y="172" width="135" height="6" rx="3" fill="#e2e8f0"/>
+    <rect x="370" y="172" width="115" height="6" rx="3" fill="url(#soAccent)"/>
+
+    <rect x="355" y="215" width="165" height="100" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="370" y="240" font-family="system-ui, sans-serif" font-size="11" fill="#2563eb">Carbon Offset</text>
+    <text x="370" y="270" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" fill="#0f172a">18.4k <tspan font-size="12">Tons</tspan></text>
+    <text x="370" y="295" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#10b981">↑ +22% vs Benchmark</text>
+  </g>
+</svg>

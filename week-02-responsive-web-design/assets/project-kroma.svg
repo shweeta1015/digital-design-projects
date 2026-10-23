@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="krBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="krCurve" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="krShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#2563eb" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#krBg)"/>
+  <g filter="url(#krShadow)">
+    <rect x="50" y="40" width="500" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <!-- Top Nav -->
+    <rect x="80" y="65" width="110" height="14" rx="4" fill="#2563eb"/>
+    <rect x="420" y="65" width="100" height="14" rx="4" fill="#e0e7ff"/>
+    <!-- Patient Monitor Card -->
+    <rect x="80" y="100" width="440" height="130" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="105" y="130" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0f172a">Continuous Vital Diagnostics</text>
+    <text x="440" y="130" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#10b981">● Live Sync</text>
+    <!-- ECG / Rhythm Pulse Wave -->
+    <path d="M 105 180 L 160 180 L 175 150 L 190 205 L 205 160 L 220 180 L 280 180 L 295 140 L 310 215 L 325 155 L 340 180 L 500 180" fill="none" stroke="url(#krCurve)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- 3 Metrics Columns -->
+    <rect x="80" y="245" width="135" height="70" rx="10" fill="#f5f3ff"/>
+    <text x="100" y="270" font-family="system-ui, sans-serif" font-size="10" fill="#7c3aed">Resting Heart Rate</text>
+    <text x="100" y="296" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#0f172a">68 <tspan font-size="11" fill="#64748b">bpm</tspan></text>
+
+    <rect x="232" y="245" width="135" height="70" rx="10" fill="#eff6ff"/>
+    <text x="252" y="270" font-family="system-ui, sans-serif" font-size="10" fill="#2563eb">Blood Oxygen</text>
+    <text x="252" y="296" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#0f172a">99.2 <tspan font-size="11" fill="#64748b">%</tspan></text>
+
+    <rect x="385" y="245" width="135" height="70" rx="10" fill="#f0fdf4"/>
+    <text x="405" y="270" font-family="system-ui, sans-serif" font-size="10" fill="#059669">Sleep Index</text>
+    <text x="405" y="296" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#0f172a">94 <tspan font-size="11" fill="#64748b">/ 100</tspan></text>
+  </g>
+</svg>
